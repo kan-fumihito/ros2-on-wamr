@@ -1,0 +1,12 @@
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm/lib/pubsub_wasm/talker
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm/share/ament_index/resource_index/package_run_dependencies/pubsub_wasm
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm/share/ament_index/resource_index/parent_prefix_path/pubsub_wasm
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm/share/pubsub_wasm/environment/ament_prefix_path.sh
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm/share/pubsub_wasm/environment/path.sh
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm/share/pubsub_wasm/local_setup.bash
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm/share/pubsub_wasm/local_setup.sh
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm/share/pubsub_wasm/local_setup.zsh
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm/share/ament_index/resource_index/packages/pubsub_wasm
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm/share/pubsub_wasm/cmake/pubsub_wasmConfig.cmake
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm/share/pubsub_wasm/cmake/pubsub_wasmConfig-version.cmake
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm/share/pubsub_wasm/package.xml

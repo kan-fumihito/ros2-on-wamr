@@ -1,0 +1,40 @@
+[0.089s] Invoking command in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/build/pubsub_wasm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm -DCMAKE_INSTALL_PREFIX=/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm
+[0.652s] -- The C compiler identification is GNU 7.5.0
+[1.106s] -- The CXX compiler identification is GNU 7.5.0
+[1.124s] -- Check for working C compiler: /usr/bin/cc
+[1.357s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.361s] -- Detecting C compiler ABI info
+[1.594s] -- Detecting C compiler ABI info - done
+[1.617s] -- Detecting C compile features
+[2.309s] -- Detecting C compile features - done
+[2.321s] -- Check for working CXX compiler: /usr/bin/c++
+[2.579s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.581s] -- Detecting CXX compiler ABI info
+[2.847s] -- Detecting CXX compiler ABI info - done
+[2.866s] -- Detecting CXX compile features
+[4.030s] -- Detecting CXX compile features - done
+[4.042s] -- Found ament_cmake: 0.7.3 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/ament_cmake/cmake)
+[4.167s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[4.168s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.282s] -- Found rclcpp: 0.7.5 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/rclcpp/cmake)
+[5.379s] -- Found rosidl_adapter: 0.7.3 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/rosidl_adapter/cmake)
+[5.571s] -- Found rmw_implementation_cmake: 0.7.1 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/rmw_implementation_cmake/cmake)
+[5.588s] -- Looking for pthread.h
+[5.845s] -- Looking for pthread.h - found
+[5.849s] -- Looking for pthread_create
+[6.094s] -- Looking for pthread_create - not found
+[6.094s] -- Looking for pthread_create in pthreads
+[6.307s] -- Looking for pthread_create in pthreads - not found
+[6.308s] -- Looking for pthread_create in pthread
+[6.543s] -- Looking for pthread_create in pthread - found
+[6.546s] -- Found Threads: TRUE  
+[6.682s] -- Found std_msgs: 0.7.0 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/std_msgs/cmake)
+[6.706s] -- Found ament_lint_auto: 0.7.3 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/ament_lint_auto/cmake)
+[7.053s] CMake Error at CMakeLists.txt:36 (add_excutable):
+[7.053s]   Unknown CMake command "add_excutable".
+[7.054s] 
+[7.054s] 
+[7.059s] -- Configuring incomplete, errors occurred!
+[7.060s] See also "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/build/pubsub_wasm/CMakeFiles/CMakeOutput.log".
+[7.060s] See also "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/build/pubsub_wasm/CMakeFiles/CMakeError.log".
+[7.073s] Invoked command in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/build/pubsub_wasm' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm -DCMAKE_INSTALL_PREFIX=/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/install/pubsub_wasm
