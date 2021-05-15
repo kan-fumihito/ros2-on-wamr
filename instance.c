@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    const wasm_func_t *sum = wasm_extern_as_func(exports.data[0]);
+    const wasm_func_t *sum = wasm_extern_as_func(exports.data[1]);
     if (sum == NULL)
     {
         printf("> Error accessing export!\n");
