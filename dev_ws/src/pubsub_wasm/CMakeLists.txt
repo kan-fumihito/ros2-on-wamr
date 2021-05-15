@@ -1,5 +1,11 @@
 cmake_minimum_required(VERSION 3.5)
 project(pubsub_wasm)
+include_directories(~/.wasmer/include)
+link_directories(~/.wasmer/lib)
+
+CFLAGS = -g -I$(shell $(WASMER_DIR)/bin/wasmer config --includedir)
+LDFLAGS = -Wl,-rpath,$(shell $(WASMER_DIR)/bin/wasmer config --libdir)
+LDLIBS = $(shell $(WASMER_DIR)/bin/wasmer config --libs)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -35,6 +41,8 @@ if(BUILD_TESTING)
 endif()
 add_executable(talker src/publisher_member_function.cpp)
 ament_target_dependencies(talker rclcpp std_msgs)
+
+target_link_libraries(talker wasmer)
 
 install(TARGETS
 	talker
