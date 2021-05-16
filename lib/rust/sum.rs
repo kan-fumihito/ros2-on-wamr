@@ -1,8 +1,14 @@
-#[no_mangle]
-pub extern fn sum(a :i32, b :i32) -> i32{
-    return a+b;
+#![no_main]
+
+extern "C"{
+    fn foo(a :i32, b :i32)->i32;
+    fn bar(a :i32, b :i32, c :i32, d :i32);
 }
 
-fn main(){
-    sum(1,3);
+#[no_mangle]
+pub extern fn ros_main() -> i32{
+    unsafe{
+        bar(1,2,3,4);
+        foo(3,2)
+    }
 }
