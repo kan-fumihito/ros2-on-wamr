@@ -110,7 +110,7 @@ int main(int argc, char *argv[])
 
   /* lookup a WASM function by its name
      The function signature can NULL here */
-  func = wasm_runtime_lookup_function(module_inst, "ros_wasm", NULL);
+  func = wasm_runtime_lookup_function(module_inst, "ros_main", NULL);
 
   /* creat an execution environment to execute the WASM functions */
   exec_env = wasm_runtime_create_exec_env(module_inst, stack_size);
@@ -119,6 +119,10 @@ int main(int argc, char *argv[])
 
   /* arguments are always transferred in 32-bit element */
 
+  if(func==NULL){
+	  printf("Func is NULL\n");
+	  return 1;
+  }
   /* call the WASM function */
   if (wasm_runtime_call_wasm(exec_env, func, 0, args))
   {
