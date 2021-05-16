@@ -62,14 +62,14 @@ void init_wamr(void)
   static NativeSymbol native_symbols[] =
       {
           {
-              "bar",  // the name of WASM function name
-              bar,    // the native function pointer
+              "bar",   // the name of WASM function name
+              (void*)bar,     // the native function pointer
               "(iiii)" // the function prototype signature
           },
           {
-              "foo",      // the name of WASM function name
-              foo, // the native function pointer
-              "(ii)i"     // the function prototype signature
+              "foo",  // the name of WASM function name
+              (void*)foo,    // the native function pointer
+              "(ii)i" // the function prototype signature
           }};
 
   int n_native_symbols = sizeof(native_symbols) / sizeof(NativeSymbol);
@@ -84,7 +84,7 @@ void init_wamr(void)
 int main(int argc, char *argv[])
 {
   FILE *fp;
-  char *buffer, error_buf[128];
+  char error_buf[128];
   wasm_module_t module;
   wasm_module_inst_t module_inst;
   wasm_function_inst_t func;
@@ -95,7 +95,7 @@ int main(int argc, char *argv[])
   fseek(fp, 0, SEEK_END);
   size = ftell(fp);
   fseek(fp, 0, SEEK_SET);
-  buffer = malloc(sizeof(char) * size);
+  const uint8_t *buffer = (uint8_t*)malloc(sizeof(char) * size);
   fread(buffer, sizeof(char), size, fp);
 
   init_wamr();
