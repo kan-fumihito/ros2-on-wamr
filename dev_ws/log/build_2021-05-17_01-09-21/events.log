@@ -1,0 +1,250 @@
+[0.000000] (-) TimerEvent: {}
+[0.004113] (pubsub_wasm) JobQueued: {'identifier': 'pubsub_wasm', 'dependencies': OrderedDict()}
+[0.004462] (pubsub_wasm) JobStarted: {'identifier': 'pubsub_wasm'}
+[0.054641] (-) TimerEvent: {}
+[0.074105] (pubsub_wasm) JobProgress: {'identifier': 'pubsub_wasm', 'progress': 'cmake'}
+[0.076957] (pubsub_wasm) JobProgress: {'identifier': 'pubsub_wasm', 'progress': 'build'}
+[0.081054] (pubsub_wasm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm', '--', '-j4', '-l4'], 'cwd': '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm', 'env': OrderedDict([('MAIL', '/var/mail/oss'), ('USER', 'oss'), ('SSH_CLIENT', '192.168.0.2 58494 22'), ('LANGUAGE', 'ja:en_US:en'), ('LC_TIME', 'ja_JP.UTF-8'), ('OSPL_INFOFILE', '<stdout>'), ('LD_LIBRARY_PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/lib:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/opt/yaml_cpp_vendor/lib:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/opt/rviz_ogre_vendor/lib:/usr/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm'), ('OSPL_URI', 'file:///home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/opensplice_cmake_module/config/ros_ospl.xml'), ('HOME', '/home/oss'), ('SSH_TTY', '/dev/pts/1'), ('OSPL_VERBOSITY', '2'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('OSPL_TMPL_PATH', '/usr/etc/opensplice/idlpp'), ('COLCON_PREFIX_PATH', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'oss'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/lib/pkgconfig'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm'), ('OSPL_ERRORFILE', '<stderr>'), ('PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/bin:/usr/local/opt/llvm/bin:/home/oss/.cargo/bin:/usr/local/opt/llvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'ja_JP.UTF-8'), ('OSPL_HOME', '/usr'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('AMENT_PREFIX_PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm:/opt/ros/dashing'), ('LC_NAME', 'ja_JP.UTF-8'), ('SHELL', '/bin/bash'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('PWD', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm'), ('SSH_CONNECTION', '192.168.0.2 58494 192.168.0.6 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('PYTHONPATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm:/opt/ros/dashing')]), 'shell': False}
+[0.154953] (-) TimerEvent: {}
+[0.183086] (pubsub_wasm) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.3 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/ament_cmake/cmake)\n'}
+[0.255144] (-) TimerEvent: {}
+[0.289735] (pubsub_wasm) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.355375] (-) TimerEvent: {}
+[0.456163] (-) TimerEvent: {}
+[0.556937] (-) TimerEvent: {}
+[0.657680] (-) TimerEvent: {}
+[0.758424] (-) TimerEvent: {}
+[0.859134] (-) TimerEvent: {}
+[0.959818] (-) TimerEvent: {}
+[1.060482] (-) TimerEvent: {}
+[1.161099] (-) TimerEvent: {}
+[1.261847] (-) TimerEvent: {}
+[1.322718] (pubsub_wasm) StdoutLine: {'line': b'-- Found rclcpp: 0.7.5 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/rclcpp/cmake)\n'}
+[1.362068] (-) TimerEvent: {}
+[1.373919] (pubsub_wasm) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.3 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/rosidl_adapter/cmake)\n'}
+[1.462276] (-) TimerEvent: {}
+[1.511096] (pubsub_wasm) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.1 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/rmw_implementation_cmake/cmake)\n'}
+[1.562484] (-) TimerEvent: {}
+[1.613306] (pubsub_wasm) StdoutLine: {'line': b'-- Found std_msgs: 0.7.0 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/std_msgs/cmake)\n'}
+[1.631529] (pubsub_wasm) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.3 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/ament_lint_auto/cmake)\n'}
+[1.662706] (-) TimerEvent: {}
+[1.763435] (-) TimerEvent: {}
+[1.864178] (-) TimerEvent: {}
+[1.964985] (-) TimerEvent: {}
+[2.065725] (-) TimerEvent: {}
+[2.116137] (pubsub_wasm) StdoutLine: {'line': b"-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code\n"}
+[2.165913] (-) TimerEvent: {}
+[2.185242] (pubsub_wasm) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.186096] (pubsub_wasm) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.254354] (pubsub_wasm) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.264049] (pubsub_wasm) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.266076] (-) TimerEvent: {}
+[2.282136] (pubsub_wasm) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.291692] (pubsub_wasm) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[2.359742] (pubsub_wasm) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.366250] (-) TimerEvent: {}
+[2.369554] (pubsub_wasm) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.378437] (pubsub_wasm) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.454105] (pubsub_wasm) StdoutLine: {'line': b'-- Generating done\n'}
+[2.459777] (pubsub_wasm) StdoutLine: {'line': b'-- Build files have been written to: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm\n'}
+[2.466507] (-) TimerEvent: {}
+[2.536551] (pubsub_wasm) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target talker_node\x1b[0m\n'}
+[2.542634] (pubsub_wasm) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target talker_wasm\x1b[0m\n'}
+[2.566735] (-) TimerEvent: {}
+[2.633622] (pubsub_wasm) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/talker_wasm.dir/src/wasm_node.cpp.o\x1b[0m\n'}
+[2.650929] (pubsub_wasm) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talker_node.dir/src/publisher_member_function.cpp.o\x1b[0m\n'}
+[2.667050] (-) TimerEvent: {}
+[2.767892] (-) TimerEvent: {}
+[2.868749] (-) TimerEvent: {}
+[2.969666] (-) TimerEvent: {}
+[3.070495] (-) TimerEvent: {}
+[3.171310] (-) TimerEvent: {}
+[3.272129] (-) TimerEvent: {}
+[3.372950] (-) TimerEvent: {}
+[3.473702] (-) TimerEvent: {}
+[3.574532] (-) TimerEvent: {}
+[3.675360] (-) TimerEvent: {}
+[3.701202] (pubsub_wasm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20\x1b[m\x1b[K:\n'}
+[3.702078] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint foo(wasm_exec_env_t, int, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.703004] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:6:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kexec_env\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.703637] (pubsub_wasm) StderrLine: {'line': b' int foo(\x1b[01;35m\x1b[Kwasm_exec_env_t exec_env\x1b[m\x1b[K, int a, int b)\n'}
+[3.704185] (pubsub_wasm) StderrLine: {'line': b'         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[3.704837] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid bar(wasm_exec_env_t, int, int, int, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.705405] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:12:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kexec_env\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.705966] (pubsub_wasm) StderrLine: {'line': b' void bar(\x1b[01;35m\x1b[Kwasm_exec_env_t exec_env\x1b[m\x1b[K, int a, int b, int c, int d)\n'}
+[3.706480] (pubsub_wasm) StderrLine: {'line': b'          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[3.775627] (-) TimerEvent: {}
+[3.876454] (-) TimerEvent: {}
+[3.977227] (-) TimerEvent: {}
+[4.078016] (-) TimerEvent: {}
+[4.178864] (-) TimerEvent: {}
+[4.279679] (-) TimerEvent: {}
+[4.380507] (-) TimerEvent: {}
+[4.481258] (-) TimerEvent: {}
+[4.582074] (-) TimerEvent: {}
+[4.682900] (-) TimerEvent: {}
+[4.783722] (-) TimerEvent: {}
+[4.884658] (-) TimerEvent: {}
+[4.985429] (-) TimerEvent: {}
+[5.086257] (-) TimerEvent: {}
+[5.187076] (-) TimerEvent: {}
+[5.287909] (-) TimerEvent: {}
+[5.388743] (-) TimerEvent: {}
+[5.489562] (-) TimerEvent: {}
+[5.590320] (-) TimerEvent: {}
+[5.691144] (-) TimerEvent: {}
+[5.791976] (-) TimerEvent: {}
+[5.892824] (-) TimerEvent: {}
+[5.993587] (-) TimerEvent: {}
+[6.094354] (-) TimerEvent: {}
+[6.195181] (-) TimerEvent: {}
+[6.295998] (-) TimerEvent: {}
+[6.396785] (-) TimerEvent: {}
+[6.497629] (-) TimerEvent: {}
+[6.598445] (-) TimerEvent: {}
+[6.699269] (-) TimerEvent: {}
+[6.800091] (-) TimerEvent: {}
+[6.900910] (-) TimerEvent: {}
+[6.969229] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid init_wamr()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.969979] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:73:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kvoid (*)(wasm_exec_env_t, int, int, int, int)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kvoid (*)(WASMExecEnv*, int, int, int, int)\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kvoid*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[6.970535] (pubsub_wasm) StderrLine: {'line': b'           }\x1b[01;35m\x1b[K}\x1b[m\x1b[K;\n'}
+[6.971056] (pubsub_wasm) StderrLine: {'line': b'            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.971583] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:73:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KNativeSymbol::attachment\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wmissing-field-initializers\x1b[m\x1b[K]\n'}
+[6.972126] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:73:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kint (*)(wasm_exec_env_t, int, int)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kint (*)(WASMExecEnv*, int, int)\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kvoid*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[6.972783] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:73:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KNativeSymbol::attachment\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wmissing-field-initializers\x1b[m\x1b[K]\n'}
+[6.985174] (pubsub_wasm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/oss/.wasmer/include/wasmer_wasm.h:96\x1b[m\x1b[K,\n'}
+[6.986021] (pubsub_wasm) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:21\x1b[m\x1b[K:\n'}
+[6.987432] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.988745] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/.wasmer/include/wasm.h:707:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[6.989371] (pubsub_wasm) StderrLine: {'line': b' #define WASM_I32_VAL(i) {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kkind = WASM_I32, .of = {.i32 = i}}\n'}
+[6.990033] (pubsub_wasm) StderrLine: {'line': b'                          \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.990605] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KWASM_I32_VAL\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.991171] (pubsub_wasm) StderrLine: {'line': b'   wasm_val_t args_val[2] = {\x1b[01;36m\x1b[KWASM_I32_VAL\x1b[m\x1b[K(1), WASM_I32_VAL(2)};\n'}
+[6.991708] (pubsub_wasm) StderrLine: {'line': b'                             \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.992299] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/.wasmer/include/wasm.h:707:44:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[6.992903] (pubsub_wasm) StderrLine: {'line': b' #define WASM_I32_VAL(i) {.kind = WASM_I32, \x1b[01;35m\x1b[K.\x1b[m\x1b[Kof = {.i32 = i}}\n'}
+[6.993467] (pubsub_wasm) StderrLine: {'line': b'                                            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.994036] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KWASM_I32_VAL\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.994570] (pubsub_wasm) StderrLine: {'line': b'   wasm_val_t args_val[2] = {\x1b[01;36m\x1b[KWASM_I32_VAL\x1b[m\x1b[K(1), WASM_I32_VAL(2)};\n'}
+[6.995129] (pubsub_wasm) StderrLine: {'line': b'                             \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.995647] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/.wasmer/include/wasm.h:707:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[6.996200] (pubsub_wasm) StderrLine: {'line': b' #define WASM_I32_VAL(i) {.kind = WASM_I32, .of = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Ki32 = i}}\n'}
+[6.996833] (pubsub_wasm) StderrLine: {'line': b'                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.997366] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KWASM_I32_VAL\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.997890] (pubsub_wasm) StderrLine: {'line': b'   wasm_val_t args_val[2] = {\x1b[01;36m\x1b[KWASM_I32_VAL\x1b[m\x1b[K(1), WASM_I32_VAL(2)};\n'}
+[6.998420] (pubsub_wasm) StderrLine: {'line': b'                             \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.998951] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/.wasmer/include/wasm.h:707:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[6.999507] (pubsub_wasm) StderrLine: {'line': b' #define WASM_I32_VAL(i) {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kkind = WASM_I32, .of = {.i32 = i}}\n'}
+[7.000013] (pubsub_wasm) StderrLine: {'line': b'                          \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.000645] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KWASM_I32_VAL\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.001170] (-) TimerEvent: {}
+[7.001826] (pubsub_wasm) StderrLine: {'line': b'   wasm_val_t args_val[2] = {WASM_I32_VAL(1), \x1b[01;36m\x1b[KWASM_I32_VAL\x1b[m\x1b[K(2)};\n'}
+[7.002502] (pubsub_wasm) StderrLine: {'line': b'                                              \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.003075] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/.wasmer/include/wasm.h:707:44:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[7.003648] (pubsub_wasm) StderrLine: {'line': b' #define WASM_I32_VAL(i) {.kind = WASM_I32, \x1b[01;35m\x1b[K.\x1b[m\x1b[Kof = {.i32 = i}}\n'}
+[7.004190] (pubsub_wasm) StderrLine: {'line': b'                                            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.004828] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KWASM_I32_VAL\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.005391] (pubsub_wasm) StderrLine: {'line': b'   wasm_val_t args_val[2] = {WASM_I32_VAL(1), \x1b[01;36m\x1b[KWASM_I32_VAL\x1b[m\x1b[K(2)};\n'}
+[7.005967] (pubsub_wasm) StderrLine: {'line': b'                                              \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.006498] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/.wasmer/include/wasm.h:707:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[7.007021] (pubsub_wasm) StderrLine: {'line': b' #define WASM_I32_VAL(i) {.kind = WASM_I32, .of = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Ki32 = i}}\n'}
+[7.007560] (pubsub_wasm) StderrLine: {'line': b'                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.008156] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KWASM_I32_VAL\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.009037] (pubsub_wasm) StderrLine: {'line': b'   wasm_val_t args_val[2] = {WASM_I32_VAL(1), \x1b[01;36m\x1b[KWASM_I32_VAL\x1b[m\x1b[K(2)};\n'}
+[7.009581] (pubsub_wasm) StderrLine: {'line': b'                                              \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.010131] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/.wasmer/include/wasm.h:712:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[7.010671] (pubsub_wasm) StderrLine: {'line': b' #define WASM_INIT_VAL {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kkind = WASM_ANYREF, .of = {.ref = NULL}}\n'}
+[7.011202] (pubsub_wasm) StderrLine: {'line': b'                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.011728] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:121:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KWASM_INIT_VAL\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.012364] (pubsub_wasm) StderrLine: {'line': b'   wasm_val_t results_val[1] = {\x1b[01;36m\x1b[KWASM_INIT_VAL\x1b[m\x1b[K};\n'}
+[7.012948] (pubsub_wasm) StderrLine: {'line': b'                                \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.013473] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/.wasmer/include/wasm.h:712:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[7.014003] (pubsub_wasm) StderrLine: {'line': b' #define WASM_INIT_VAL {.kind = WASM_ANYREF, \x1b[01;35m\x1b[K.\x1b[m\x1b[Kof = {.ref = NULL}}\n'}
+[7.014531] (pubsub_wasm) StderrLine: {'line': b'                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.015042] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:121:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KWASM_INIT_VAL\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.015552] (pubsub_wasm) StderrLine: {'line': b'   wasm_val_t results_val[1] = {\x1b[01;36m\x1b[KWASM_INIT_VAL\x1b[m\x1b[K};\n'}
+[7.016060] (pubsub_wasm) StderrLine: {'line': b'                                \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.016660] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/.wasmer/include/wasm.h:712:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[7.017220] (pubsub_wasm) StderrLine: {'line': b' #define WASM_INIT_VAL {.kind = WASM_ANYREF, .of = {\x1b[01;35m\x1b[K.\x1b[m\x1b[Kref = NULL}}\n'}
+[7.017751] (pubsub_wasm) StderrLine: {'line': b'                                                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.018272] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:121:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KWASM_INIT_VAL\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.018792] (pubsub_wasm) StderrLine: {'line': b'   wasm_val_t results_val[1] = {\x1b[01;36m\x1b[KWASM_INIT_VAL\x1b[m\x1b[K};\n'}
+[7.019297] (pubsub_wasm) StderrLine: {'line': b'                                \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.101452] (-) TimerEvent: {}
+[7.202457] (-) TimerEvent: {}
+[7.303297] (-) TimerEvent: {}
+[7.404318] (-) TimerEvent: {}
+[7.505146] (-) TimerEvent: {}
+[7.605982] (-) TimerEvent: {}
+[7.706810] (-) TimerEvent: {}
+[7.807650] (-) TimerEvent: {}
+[7.908463] (-) TimerEvent: {}
+[8.009287] (-) TimerEvent: {}
+[8.110116] (-) TimerEvent: {}
+[8.210927] (-) TimerEvent: {}
+[8.311771] (-) TimerEvent: {}
+[8.412732] (-) TimerEvent: {}
+[8.513555] (-) TimerEvent: {}
+[8.614363] (-) TimerEvent: {}
+[8.715175] (-) TimerEvent: {}
+[8.815990] (-) TimerEvent: {}
+[8.916877] (-) TimerEvent: {}
+[9.017701] (-) TimerEvent: {}
+[9.118521] (-) TimerEvent: {}
+[9.219332] (-) TimerEvent: {}
+[9.320139] (-) TimerEvent: {}
+[9.420980] (-) TimerEvent: {}
+[9.521799] (-) TimerEvent: {}
+[9.622616] (-) TimerEvent: {}
+[9.723420] (-) TimerEvent: {}
+[9.824294] (-) TimerEvent: {}
+[9.925126] (-) TimerEvent: {}
+[10.025938] (-) TimerEvent: {}
+[10.126755] (-) TimerEvent: {}
+[10.227594] (-) TimerEvent: {}
+[10.328423] (-) TimerEvent: {}
+[10.429229] (-) TimerEvent: {}
+[10.530054] (-) TimerEvent: {}
+[10.630922] (-) TimerEvent: {}
+[10.665957] (pubsub_wasm) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable talker_wasm\x1b[0m\n'}
+[10.682462] (pubsub_wasm) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable talker_node\x1b[0m\n'}
+[10.731165] (-) TimerEvent: {}
+[10.832048] (-) TimerEvent: {}
+[10.933077] (-) TimerEvent: {}
+[11.033952] (-) TimerEvent: {}
+[11.134757] (-) TimerEvent: {}
+[11.229256] (pubsub_wasm) StdoutLine: {'line': b'[100%] Built target talker_wasm\n'}
+[11.234987] (-) TimerEvent: {}
+[11.249430] (pubsub_wasm) StdoutLine: {'line': b'[100%] Built target talker_node\n'}
+[11.290261] (pubsub_wasm) CommandEnded: {'returncode': 0}
+[11.335282] (-) TimerEvent: {}
+[11.378684] (pubsub_wasm) JobProgress: {'identifier': 'pubsub_wasm', 'progress': 'install'}
+[11.421392] (pubsub_wasm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm', '--target', 'install', '--', '-j4', '-l4'], 'cwd': '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm', 'env': OrderedDict([('MAIL', '/var/mail/oss'), ('USER', 'oss'), ('SSH_CLIENT', '192.168.0.2 58494 22'), ('LANGUAGE', 'ja:en_US:en'), ('LC_TIME', 'ja_JP.UTF-8'), ('OSPL_INFOFILE', '<stdout>'), ('LD_LIBRARY_PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/lib:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/opt/yaml_cpp_vendor/lib:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/opt/rviz_ogre_vendor/lib:/usr/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm'), ('OSPL_URI', 'file:///home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/opensplice_cmake_module/config/ros_ospl.xml'), ('HOME', '/home/oss'), ('SSH_TTY', '/dev/pts/1'), ('OSPL_VERBOSITY', '2'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('OSPL_TMPL_PATH', '/usr/etc/opensplice/idlpp'), ('COLCON_PREFIX_PATH', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'oss'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/lib/pkgconfig'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm'), ('OSPL_ERRORFILE', '<stderr>'), ('PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/bin:/usr/local/opt/llvm/bin:/home/oss/.cargo/bin:/usr/local/opt/llvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'ja_JP.UTF-8'), ('OSPL_HOME', '/usr'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('AMENT_PREFIX_PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm:/opt/ros/dashing'), ('LC_NAME', 'ja_JP.UTF-8'), ('SHELL', '/bin/bash'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('PWD', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm'), ('SSH_CONNECTION', '192.168.0.2 58494 192.168.0.6 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('PYTHONPATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm:/opt/ros/dashing')]), 'shell': False}
+[11.435556] (-) TimerEvent: {}
+[11.536466] (-) TimerEvent: {}
+[11.631697] (pubsub_wasm) StdoutLine: {'line': b'[100%] Built target talker_node\n'}
+[11.632621] (pubsub_wasm) StdoutLine: {'line': b'[100%] Built target talker_wasm\n'}
+[11.636633] (-) TimerEvent: {}
+[11.700505] (pubsub_wasm) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[11.733026] (pubsub_wasm) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.734023] (pubsub_wasm) StdoutLine: {'line': b'-- Installing: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_node\n'}
+[11.736769] (-) TimerEvent: {}
+[11.737653] (pubsub_wasm) StdoutLine: {'line': b'-- Set runtime path of "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_node" to ""\n'}
+[11.738374] (pubsub_wasm) StdoutLine: {'line': b'-- Installing: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_wasm\n'}
+[11.740844] (pubsub_wasm) StdoutLine: {'line': b'-- Set runtime path of "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_wasm" to ""\n'}
+[11.741603] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/ament_index/resource_index/package_run_dependencies/pubsub_wasm\n'}
+[11.742179] (pubsub_wasm) StdoutLine: {'line': b'-- Installing: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/ament_index/resource_index/parent_prefix_path/pubsub_wasm\n'}
+[11.742780] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/environment/ament_prefix_path.sh\n'}
+[11.743401] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/environment/path.sh\n'}
+[11.744014] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/local_setup.bash\n'}
+[11.744600] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/local_setup.sh\n'}
+[11.745135] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/local_setup.zsh\n'}
+[11.745681] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/ament_index/resource_index/packages/pubsub_wasm\n'}
+[11.746293] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/cmake/pubsub_wasmConfig.cmake\n'}
+[11.746815] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/cmake/pubsub_wasmConfig-version.cmake\n'}
+[11.747299] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/package.xml\n'}
+[11.753368] (pubsub_wasm) CommandEnded: {'returncode': 0}
+[11.837128] (-) TimerEvent: {}
+[11.938021] (-) TimerEvent: {}
+[11.946896] (pubsub_wasm) JobEnded: {'identifier': 'pubsub_wasm', 'rc': 0}
+[11.951365] (-) EventReactorShutdown: {}

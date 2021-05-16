@@ -1,0 +1,74 @@
+[0.000000] (-) TimerEvent: {}
+[0.001561] (pubsub_wasm) JobQueued: {'identifier': 'pubsub_wasm', 'dependencies': OrderedDict()}
+[0.005054] (pubsub_wasm) JobStarted: {'identifier': 'pubsub_wasm'}
+[0.054738] (pubsub_wasm) JobProgress: {'identifier': 'pubsub_wasm', 'progress': 'cmake'}
+[0.056954] (pubsub_wasm) Command: {'cmd': ['/usr/bin/cmake', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm', '-DCMAKE_INSTALL_PREFIX=/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm'], 'cwd': '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm', 'env': OrderedDict([('MAIL', '/var/mail/oss'), ('USER', 'oss'), ('SSH_CLIENT', '192.168.0.2 58494 22'), ('LANGUAGE', 'ja:en_US:en'), ('LC_TIME', 'ja_JP.UTF-8'), ('SHLVL', '1'), ('OLDPWD', '/home/oss/b1018262/ROS/ros2-on-wasmer'), ('HOME', '/home/oss'), ('SSH_TTY', '/dev/pts/1'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'oss'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm'), ('PATH', '/usr/local/opt/llvm/bin:/home/oss/.cargo/bin:/usr/local/opt/llvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'ja_JP.UTF-8'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('LC_NAME', 'ja_JP.UTF-8'), ('SHELL', '/bin/bash'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('PWD', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm'), ('SSH_CONNECTION', '192.168.0.2 58494 192.168.0.6 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.115966] (-) TimerEvent: {}
+[0.216799] (-) TimerEvent: {}
+[0.244716] (pubsub_wasm) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[0.317027] (-) TimerEvent: {}
+[0.417851] (-) TimerEvent: {}
+[0.420760] (pubsub_wasm) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 8.4.0\n'}
+[0.432354] (pubsub_wasm) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.518089] (-) TimerEvent: {}
+[0.618914] (-) TimerEvent: {}
+[0.653290] (pubsub_wasm) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.655063] (pubsub_wasm) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.719191] (-) TimerEvent: {}
+[0.819935] (-) TimerEvent: {}
+[0.877231] (pubsub_wasm) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.897604] (pubsub_wasm) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.920105] (-) TimerEvent: {}
+[1.020896] (-) TimerEvent: {}
+[1.121721] (-) TimerEvent: {}
+[1.222666] (-) TimerEvent: {}
+[1.323545] (-) TimerEvent: {}
+[1.424334] (-) TimerEvent: {}
+[1.525119] (-) TimerEvent: {}
+[1.568416] (pubsub_wasm) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.576046] (pubsub_wasm) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/g++\n'}
+[1.625363] (-) TimerEvent: {}
+[1.726150] (-) TimerEvent: {}
+[1.826958] (-) TimerEvent: {}
+[1.836689] (pubsub_wasm) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/g++ -- works\n'}
+[1.838680] (pubsub_wasm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.927162] (-) TimerEvent: {}
+[2.027893] (-) TimerEvent: {}
+[2.100523] (pubsub_wasm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.119768] (pubsub_wasm) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.128012] (-) TimerEvent: {}
+[2.228638] (-) TimerEvent: {}
+[2.329424] (-) TimerEvent: {}
+[2.430223] (-) TimerEvent: {}
+[2.531076] (-) TimerEvent: {}
+[2.631880] (-) TimerEvent: {}
+[2.732672] (-) TimerEvent: {}
+[2.833464] (-) TimerEvent: {}
+[2.934259] (-) TimerEvent: {}
+[3.035071] (-) TimerEvent: {}
+[3.135872] (-) TimerEvent: {}
+[3.236637] (-) TimerEvent: {}
+[3.244164] (pubsub_wasm) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.282807] (pubsub_wasm) StderrLine: {'line': b'CMake Error at CMakeLists.txt:21 (find_package):\n'}
+[3.283560] (pubsub_wasm) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[3.284034] (pubsub_wasm) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[3.284551] (pubsub_wasm) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[3.285571] (pubsub_wasm) StderrLine: {'line': b'\n'}
+[3.286122] (pubsub_wasm) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[3.286752] (pubsub_wasm) StderrLine: {'line': b'  any of the following names:\n'}
+[3.287472] (pubsub_wasm) StderrLine: {'line': b'\n'}
+[3.287979] (pubsub_wasm) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[3.288465] (pubsub_wasm) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[3.288940] (pubsub_wasm) StderrLine: {'line': b'\n'}
+[3.289427] (pubsub_wasm) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[3.289889] (pubsub_wasm) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[3.290348] (pubsub_wasm) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[3.291314] (pubsub_wasm) StderrLine: {'line': b'  has been installed.\n'}
+[3.291862] (pubsub_wasm) StderrLine: {'line': b'\n'}
+[3.293081] (pubsub_wasm) StderrLine: {'line': b'\n'}
+[3.294543] (pubsub_wasm) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.295772] (pubsub_wasm) StdoutLine: {'line': b'See also "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm/CMakeFiles/CMakeOutput.log".\n'}
+[3.296364] (pubsub_wasm) CommandEnded: {'returncode': 1}
+[3.336955] (-) TimerEvent: {}
+[3.386756] (pubsub_wasm) JobEnded: {'identifier': 'pubsub_wasm', 'rc': 1}
+[3.398492] (-) EventReactorShutdown: {}

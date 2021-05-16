@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target talker_wasm[0m
+[ 50%] Built target talker
+[ 75%] [32mBuilding CXX object CMakeFiles/talker_wasm.dir/src/wasm_node.cpp.o[0m
+CMakeFiles/talker_wasm.dir/build.make:62: recipe for target 'CMakeFiles/talker_wasm.dir/src/wasm_node.cpp.o' failed
+CMakeFiles/Makefile2:136: recipe for target 'CMakeFiles/talker_wasm.dir/all' failed
+Makefile:140: recipe for target 'all' failed

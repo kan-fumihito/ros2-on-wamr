@@ -16,6 +16,7 @@ endif()
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
+add_compile_options(-fpermissive)
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
@@ -35,16 +36,17 @@ if(BUILD_TESTING)
   #set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
-add_executable(talker src/publisher_member_function.cpp)
+add_executable(talker_node src/publisher_member_function.cpp)
+ament_target_dependencies(talker_node rclcpp std_msgs)
 add_executable(talker_wasm src/wasm_node.cpp)
-ament_target_dependencies(talker rclcpp std_msgs)
 ament_target_dependencies(talker_wasm rclcpp std_msgs)
 
-target_link_libraries(talker wasmer)
+target_link_libraries(talker_node wasmer)
 target_link_libraries(talker_wasm iwasm)
 
 install(TARGETS
-	talker
+	talker_node
+	talker_wasm
 	DESTINATION lib/${PROJECT_NAME}
 	)
 

@@ -1,0 +1,123 @@
+[0.082s] Invoking command in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm -- -j4 -l4
+[0.179s] -- Found ament_cmake: 0.7.3 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/ament_cmake/cmake)
+[0.286s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.319s] -- Found rclcpp: 0.7.5 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/rclcpp/cmake)
+[1.370s] -- Found rosidl_adapter: 0.7.3 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/rosidl_adapter/cmake)
+[1.507s] -- Found rmw_implementation_cmake: 0.7.1 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/rmw_implementation_cmake/cmake)
+[1.609s] -- Found std_msgs: 0.7.0 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/std_msgs/cmake)
+[1.627s] -- Found ament_lint_auto: 0.7.3 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/ament_lint_auto/cmake)
+[2.112s] -- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+[2.181s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.182s] -- Configured cppcheck include dirs: 
+[2.250s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.260s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.278s] -- Added test 'lint_cmake' to check CMake code style
+[2.288s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.356s] -- Added test 'uncrustify' to check C / C++ code style
+[2.365s] -- Added test 'xmllint' to check XML markup files
+[2.374s] -- Configuring done
+[2.450s] -- Generating done
+[2.456s] -- Build files have been written to: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm
+[2.532s] [35m[1mScanning dependencies of target talker_node[0m
+[2.539s] [35m[1mScanning dependencies of target talker_wasm[0m
+[2.630s] [ 25%] [32mBuilding CXX object CMakeFiles/talker_wasm.dir/src/wasm_node.cpp.o[0m
+[2.647s] [ 50%] [32mBuilding CXX object CMakeFiles/talker_node.dir/src/publisher_member_function.cpp.o[0m
+[3.697s] In file included from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[3.698s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Kint foo(wasm_exec_env_t, int, int)[m[K’:
+[3.699s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:6:25:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.699s]  int foo([01;35m[Kwasm_exec_env_t exec_env[m[K, int a, int b)
+[3.700s]          [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[3.701s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Kvoid bar(wasm_exec_env_t, int, int, int, int)[m[K’:
+[3.701s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:12:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.702s]  void bar([01;35m[Kwasm_exec_env_t exec_env[m[K, int a, int b, int c, int d)
+[3.702s]           [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.965s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:[m[K In function ‘[01m[Kvoid init_wamr()[m[K’:
+[6.966s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:73:12:[m[K [01;35m[Kwarning: [m[Kinvalid conversion from ‘[01m[Kvoid (*)(wasm_exec_env_t, int, int, int, int)[m[K’ {aka ‘[01m[Kvoid (*)(WASMExecEnv*, int, int, int, int)[m[K’} to ‘[01m[Kvoid*[m[K’ [[01;35m[K-fpermissive[m[K]
+[6.966s]            }[01;35m[K}[m[K;
+[6.967s]             [01;35m[K^[m[K
+[6.967s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:73:12:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+[6.968s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:73:12:[m[K [01;35m[Kwarning: [m[Kinvalid conversion from ‘[01m[Kint (*)(wasm_exec_env_t, int, int)[m[K’ {aka ‘[01m[Kint (*)(WASMExecEnv*, int, int)[m[K’} to ‘[01m[Kvoid*[m[K’ [[01;35m[K-fpermissive[m[K]
+[6.969s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:73:12:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+[6.981s] In file included from [01m[K/home/oss/.wasmer/include/wasmer_wasm.h:96[m[K,
+[6.982s]                  from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:21[m[K:
+[6.984s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[6.985s] [01m[K/home/oss/.wasmer/include/wasm.h:707:26:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+[6.985s]  #define WASM_I32_VAL(i) {[01;35m[K.[m[Kkind = WASM_I32, .of = {.i32 = i}}
+[6.986s]                           [01;35m[K^[m[K
+[6.986s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:29:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_I32_VAL[m[K’
+[6.987s]    wasm_val_t args_val[2] = {[01;36m[KWASM_I32_VAL[m[K(1), WASM_I32_VAL(2)};
+[6.988s]                              [01;36m[K^~~~~~~~~~~~[m[K
+[6.988s] [01m[K/home/oss/.wasmer/include/wasm.h:707:44:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+[6.989s]  #define WASM_I32_VAL(i) {.kind = WASM_I32, [01;35m[K.[m[Kof = {.i32 = i}}
+[6.989s]                                             [01;35m[K^[m[K
+[6.990s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:29:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_I32_VAL[m[K’
+[6.990s]    wasm_val_t args_val[2] = {[01;36m[KWASM_I32_VAL[m[K(1), WASM_I32_VAL(2)};
+[6.991s]                              [01;36m[K^~~~~~~~~~~~[m[K
+[6.991s] [01m[K/home/oss/.wasmer/include/wasm.h:707:51:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+[6.992s]  #define WASM_I32_VAL(i) {.kind = WASM_I32, .of = {[01;35m[K.[m[Ki32 = i}}
+[6.993s]                                                    [01;35m[K^[m[K
+[6.993s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:29:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_I32_VAL[m[K’
+[6.994s]    wasm_val_t args_val[2] = {[01;36m[KWASM_I32_VAL[m[K(1), WASM_I32_VAL(2)};
+[6.994s]                              [01;36m[K^~~~~~~~~~~~[m[K
+[6.995s] [01m[K/home/oss/.wasmer/include/wasm.h:707:26:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+[6.995s]  #define WASM_I32_VAL(i) {[01;35m[K.[m[Kkind = WASM_I32, .of = {.i32 = i}}
+[6.996s]                           [01;35m[K^[m[K
+[6.996s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:46:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_I32_VAL[m[K’
+[6.998s]    wasm_val_t args_val[2] = {WASM_I32_VAL(1), [01;36m[KWASM_I32_VAL[m[K(2)};
+[6.998s]                                               [01;36m[K^~~~~~~~~~~~[m[K
+[6.999s] [01m[K/home/oss/.wasmer/include/wasm.h:707:44:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+[6.999s]  #define WASM_I32_VAL(i) {.kind = WASM_I32, [01;35m[K.[m[Kof = {.i32 = i}}
+[7.000s]                                             [01;35m[K^[m[K
+[7.001s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:46:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_I32_VAL[m[K’
+[7.001s]    wasm_val_t args_val[2] = {WASM_I32_VAL(1), [01;36m[KWASM_I32_VAL[m[K(2)};
+[7.002s]                                               [01;36m[K^~~~~~~~~~~~[m[K
+[7.002s] [01m[K/home/oss/.wasmer/include/wasm.h:707:51:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+[7.003s]  #define WASM_I32_VAL(i) {.kind = WASM_I32, .of = {[01;35m[K.[m[Ki32 = i}}
+[7.003s]                                                    [01;35m[K^[m[K
+[7.004s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:46:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_I32_VAL[m[K’
+[7.005s]    wasm_val_t args_val[2] = {WASM_I32_VAL(1), [01;36m[KWASM_I32_VAL[m[K(2)};
+[7.005s]                                               [01;36m[K^~~~~~~~~~~~[m[K
+[7.006s] [01m[K/home/oss/.wasmer/include/wasm.h:712:24:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+[7.006s]  #define WASM_INIT_VAL {[01;35m[K.[m[Kkind = WASM_ANYREF, .of = {.ref = NULL}}
+[7.007s]                         [01;35m[K^[m[K
+[7.008s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:121:32:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_INIT_VAL[m[K’
+[7.008s]    wasm_val_t results_val[1] = {[01;36m[KWASM_INIT_VAL[m[K};
+[7.009s]                                 [01;36m[K^~~~~~~~~~~~~[m[K
+[7.009s] [01m[K/home/oss/.wasmer/include/wasm.h:712:45:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+[7.010s]  #define WASM_INIT_VAL {.kind = WASM_ANYREF, [01;35m[K.[m[Kof = {.ref = NULL}}
+[7.010s]                                              [01;35m[K^[m[K
+[7.011s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:121:32:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_INIT_VAL[m[K’
+[7.011s]    wasm_val_t results_val[1] = {[01;36m[KWASM_INIT_VAL[m[K};
+[7.012s]                                 [01;36m[K^~~~~~~~~~~~~[m[K
+[7.012s] [01m[K/home/oss/.wasmer/include/wasm.h:712:52:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+[7.013s]  #define WASM_INIT_VAL {.kind = WASM_ANYREF, .of = {[01;35m[K.[m[Kref = NULL}}
+[7.014s]                                                     [01;35m[K^[m[K
+[7.014s] [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:121:32:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_INIT_VAL[m[K’
+[7.015s]    wasm_val_t results_val[1] = {[01;36m[KWASM_INIT_VAL[m[K};
+[7.015s]                                 [01;36m[K^~~~~~~~~~~~~[m[K
+[10.662s] [ 75%] [32m[1mLinking CXX executable talker_wasm[0m
+[10.678s] [100%] [32m[1mLinking CXX executable talker_node[0m
+[11.225s] [100%] Built target talker_wasm
+[11.245s] [100%] Built target talker_node
+[11.287s] Invoked command in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm -- -j4 -l4
+[11.419s] Invoking command in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm --target install -- -j4 -l4
+[11.628s] [100%] Built target talker_node
+[11.628s] [100%] Built target talker_wasm
+[11.696s] [36mInstall the project...[0m
+[11.729s] -- Install configuration: ""
+[11.730s] -- Installing: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_node
+[11.734s] -- Set runtime path of "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_node" to ""
+[11.734s] -- Installing: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_wasm
+[11.737s] -- Set runtime path of "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_wasm" to ""
+[11.737s] -- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/ament_index/resource_index/package_run_dependencies/pubsub_wasm
+[11.738s] -- Installing: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/ament_index/resource_index/parent_prefix_path/pubsub_wasm
+[11.739s] -- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/environment/ament_prefix_path.sh
+[11.739s] -- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/environment/path.sh
+[11.740s] -- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/local_setup.bash
+[11.740s] -- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/local_setup.sh
+[11.741s] -- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/local_setup.zsh
+[11.742s] -- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/ament_index/resource_index/packages/pubsub_wasm
+[11.742s] -- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/cmake/pubsub_wasmConfig.cmake
+[11.743s] -- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/cmake/pubsub_wasmConfig-version.cmake
+[11.743s] -- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/package.xml
+[11.752s] Invoked command in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm --target install -- -j4 -l4

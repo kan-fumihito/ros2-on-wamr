@@ -1,0 +1,15 @@
+[0.000000] (-) TimerEvent: {}
+[0.000600] (pubsub_wasm) JobQueued: {'identifier': 'pubsub_wasm', 'dependencies': OrderedDict()}
+[0.001762] (pubsub_wasm) JobStarted: {'identifier': 'pubsub_wasm'}
+[0.095727] (-) TimerEvent: {}
+[0.104601] (pubsub_wasm) JobProgress: {'identifier': 'pubsub_wasm', 'progress': 'cmake'}
+[0.105473] (pubsub_wasm) Command: {'cmd': ['/usr/bin/cmake', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm', '-DCMAKE_INSTALL_PREFIX=/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm'], 'cwd': '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm', 'env': OrderedDict([('MAIL', '/var/mail/oss'), ('USER', 'oss'), ('SSH_CLIENT', '192.168.0.2 58494 22'), ('LANGUAGE', 'ja:en_US:en'), ('LC_TIME', 'ja_JP.UTF-8'), ('SHLVL', '1'), ('OLDPWD', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src'), ('HOME', '/home/oss'), ('SSH_TTY', '/dev/pts/1'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'oss'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm'), ('PATH', '/usr/local/opt/llvm/bin:/home/oss/.cargo/bin:/usr/local/opt/llvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'ja_JP.UTF-8'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('LC_NAME', 'ja_JP.UTF-8'), ('SHELL', '/bin/bash'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('PWD', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm'), ('SSH_CONNECTION', '192.168.0.2 58494 192.168.0.6 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.147460] (pubsub_wasm) StderrLine: {'line': b'CMake Error at CMakeLists.txt:6:\n'}
+[0.148472] (pubsub_wasm) StderrLine: {'line': b'  Parse error.  Expected "(", got unquoted argument with text "=".\n'}
+[0.149020] (pubsub_wasm) StderrLine: {'line': b'\n'}
+[0.149521] (pubsub_wasm) StderrLine: {'line': b'\n'}
+[0.150288] (pubsub_wasm) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.153117] (pubsub_wasm) CommandEnded: {'returncode': 1}
+[0.195896] (-) TimerEvent: {}
+[0.249484] (pubsub_wasm) JobEnded: {'identifier': 'pubsub_wasm', 'rc': 1}
+[0.262762] (-) EventReactorShutdown: {}

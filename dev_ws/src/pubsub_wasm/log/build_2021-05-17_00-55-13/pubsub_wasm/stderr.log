@@ -1,0 +1,71 @@
+In file included from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Kint foo(wasm_exec_env_t, int, int)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:6:25:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ int foo([01;35m[Kwasm_exec_env_t exec_env[m[K, int a, int b)
+         [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Kvoid bar(wasm_exec_env_t, int, int, int, int)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:12:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void bar([01;35m[Kwasm_exec_env_t exec_env[m[K, int a, int b, int c, int d)
+          [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:[m[K In function ‘[01m[Kvoid init_wamr()[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:73:12:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+           }[01;35m[K}[m[K;
+            [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:73:12:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+In file included from [01m[K/home/oss/.wasmer/include/wasmer_wasm.h:96[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:21[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/oss/.wasmer/include/wasm.h:707:26:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+ #define WASM_I32_VAL(i) {[01;35m[K.[m[Kkind = WASM_I32, .of = {.i32 = i}}
+                          [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:29:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_I32_VAL[m[K’
+   wasm_val_t args_val[2] = {[01;36m[KWASM_I32_VAL[m[K(1), WASM_I32_VAL(2)};
+                             [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/oss/.wasmer/include/wasm.h:707:44:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+ #define WASM_I32_VAL(i) {.kind = WASM_I32, [01;35m[K.[m[Kof = {.i32 = i}}
+                                            [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:29:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_I32_VAL[m[K’
+   wasm_val_t args_val[2] = {[01;36m[KWASM_I32_VAL[m[K(1), WASM_I32_VAL(2)};
+                             [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/oss/.wasmer/include/wasm.h:707:51:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+ #define WASM_I32_VAL(i) {.kind = WASM_I32, .of = {[01;35m[K.[m[Ki32 = i}}
+                                                   [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:29:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_I32_VAL[m[K’
+   wasm_val_t args_val[2] = {[01;36m[KWASM_I32_VAL[m[K(1), WASM_I32_VAL(2)};
+                             [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/oss/.wasmer/include/wasm.h:707:26:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+ #define WASM_I32_VAL(i) {[01;35m[K.[m[Kkind = WASM_I32, .of = {.i32 = i}}
+                          [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:46:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_I32_VAL[m[K’
+   wasm_val_t args_val[2] = {WASM_I32_VAL(1), [01;36m[KWASM_I32_VAL[m[K(2)};
+                                              [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/oss/.wasmer/include/wasm.h:707:44:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+ #define WASM_I32_VAL(i) {.kind = WASM_I32, [01;35m[K.[m[Kof = {.i32 = i}}
+                                            [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:46:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_I32_VAL[m[K’
+   wasm_val_t args_val[2] = {WASM_I32_VAL(1), [01;36m[KWASM_I32_VAL[m[K(2)};
+                                              [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/oss/.wasmer/include/wasm.h:707:51:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+ #define WASM_I32_VAL(i) {.kind = WASM_I32, .of = {[01;35m[K.[m[Ki32 = i}}
+                                                   [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:120:46:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_I32_VAL[m[K’
+   wasm_val_t args_val[2] = {WASM_I32_VAL(1), [01;36m[KWASM_I32_VAL[m[K(2)};
+                                              [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/oss/.wasmer/include/wasm.h:712:24:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+ #define WASM_INIT_VAL {[01;35m[K.[m[Kkind = WASM_ANYREF, .of = {.ref = NULL}}
+                        [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:121:32:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_INIT_VAL[m[K’
+   wasm_val_t results_val[1] = {[01;36m[KWASM_INIT_VAL[m[K};
+                                [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/oss/.wasmer/include/wasm.h:712:45:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+ #define WASM_INIT_VAL {.kind = WASM_ANYREF, [01;35m[K.[m[Kof = {.ref = NULL}}
+                                             [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:121:32:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_INIT_VAL[m[K’
+   wasm_val_t results_val[1] = {[01;36m[KWASM_INIT_VAL[m[K};
+                                [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/oss/.wasmer/include/wasm.h:712:52:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with -std=c++2a or -std=gnu++2a [[01;35m[K-Wpedantic[m[K]
+ #define WASM_INIT_VAL {.kind = WASM_ANYREF, .of = {[01;35m[K.[m[Kref = NULL}}
+                                                    [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/publisher_member_function.cpp:121:32:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWASM_INIT_VAL[m[K’
+   wasm_val_t results_val[1] = {[01;36m[KWASM_INIT_VAL[m[K};
+                                [01;36m[K^~~~~~~~~~~~~[m[K

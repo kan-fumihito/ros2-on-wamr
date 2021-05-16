@@ -1,0 +1,6 @@
+CMake Error at CMakeLists.txt:47 (install):
+  install TARGETS given target "talker" which does not exist in this
+  directory.
+
+
+make: *** [cmake_check_build_system] Error 1

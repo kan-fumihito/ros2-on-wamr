@@ -1,0 +1,35 @@
+[0.088s] Invoking command in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm': /usr/bin/cmake /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm -DCMAKE_INSTALL_PREFIX=/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm
+[0.271s] -- The C compiler identification is GNU 7.5.0
+[0.452s] -- The CXX compiler identification is GNU 8.4.0
+[0.464s] -- Check for working C compiler: /usr/bin/cc
+[0.681s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.683s] -- Detecting C compiler ABI info
+[0.906s] -- Detecting C compiler ABI info - done
+[0.925s] -- Detecting C compile features
+[1.592s] -- Detecting C compile features - done
+[1.600s] -- Check for working CXX compiler: /usr/bin/g++
+[1.854s] -- Check for working CXX compiler: /usr/bin/g++ -- works
+[1.855s] -- Detecting CXX compiler ABI info
+[2.118s] -- Detecting CXX compiler ABI info - done
+[2.136s] -- Detecting CXX compile features
+[3.273s] -- Detecting CXX compile features - done
+[3.307s] CMake Error at CMakeLists.txt:21 (find_package):
+[3.308s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[3.309s]   has asked CMake to find a package configuration file provided by
+[3.309s]   "ament_cmake", but CMake did not find one.
+[3.310s] 
+[3.310s]   Could not find a package configuration file provided by "ament_cmake" with
+[3.311s]   any of the following names:
+[3.312s] 
+[3.312s]     ament_cmakeConfig.cmake
+[3.313s]     ament_cmake-config.cmake
+[3.313s] 
+[3.314s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[3.314s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[3.315s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[3.316s]   has been installed.
+[3.316s] 
+[3.317s] 
+[3.318s] -- Configuring incomplete, errors occurred!
+[3.320s] See also "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm/CMakeFiles/CMakeOutput.log".
+[3.321s] Invoked command in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm' returned '1': /usr/bin/cmake /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm -DCMAKE_INSTALL_PREFIX=/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm

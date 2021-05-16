@@ -1,0 +1,28 @@
+[0.080s] Invoking command in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm -- -j4 -l4
+[0.173s] -- Found ament_cmake: 0.7.3 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/ament_cmake/cmake)
+[0.279s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.317s] -- Found rclcpp: 0.7.5 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/rclcpp/cmake)
+[1.367s] -- Found rosidl_adapter: 0.7.3 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/rosidl_adapter/cmake)
+[1.503s] -- Found rmw_implementation_cmake: 0.7.1 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/rmw_implementation_cmake/cmake)
+[1.607s] -- Found std_msgs: 0.7.0 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/std_msgs/cmake)
+[1.625s] -- Found ament_lint_auto: 0.7.3 (/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/ament_lint_auto/cmake)
+[2.016s] CMake Error at CMakeLists.txt:47 (install):
+[2.016s]   install TARGETS given target "talker" which does not exist in this
+[2.017s]   directory.
+[2.017s] 
+[2.018s] 
+[2.101s] -- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+[2.165s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.166s] -- Configured cppcheck include dirs: 
+[2.228s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.237s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.254s] -- Added test 'lint_cmake' to check CMake code style
+[2.262s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.325s] -- Added test 'uncrustify' to check C / C++ code style
+[2.334s] -- Added test 'xmllint' to check XML markup files
+[2.343s] -- Configuring incomplete, errors occurred!
+[2.343s] See also "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm/CMakeFiles/CMakeOutput.log".
+[2.344s] See also "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm/CMakeFiles/CMakeError.log".
+[2.351s] Makefile:296: recipe for target 'cmake_check_build_system' failed
+[2.351s] make: *** [cmake_check_build_system] Error 1
+[2.356s] Invoked command in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm -- -j4 -l4

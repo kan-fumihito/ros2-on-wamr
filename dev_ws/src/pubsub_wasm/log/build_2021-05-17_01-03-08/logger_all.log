@@ -1,0 +1,80 @@
+[1.659s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.659s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fa35445f8>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fa35445f8>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fa3544940>)
+[1.686s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.687s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.687s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.687s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.687s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.689s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.689s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm'
+[1.690s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.690s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.691s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.691s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.691s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.691s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.692s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.692s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.692s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.760s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'pubsub_wasm'
+[1.760s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.762s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.762s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.762s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.762s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.867s] Level 5:colcon.colcon_core.verb:set package 'pubsub_wasm' build argument 'cmake_args' from command line to 'None'
+[1.867s] Level 5:colcon.colcon_core.verb:set package 'pubsub_wasm' build argument 'cmake_target' from command line to 'None'
+[1.868s] Level 5:colcon.colcon_core.verb:set package 'pubsub_wasm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.868s] Level 5:colcon.colcon_core.verb:set package 'pubsub_wasm' build argument 'cmake_clean_cache' from command line to 'False'
+[1.868s] Level 5:colcon.colcon_core.verb:set package 'pubsub_wasm' build argument 'cmake_clean_first' from command line to 'False'
+[1.868s] Level 5:colcon.colcon_core.verb:set package 'pubsub_wasm' build argument 'cmake_force_configure' from command line to 'False'
+[1.868s] Level 5:colcon.colcon_core.verb:set package 'pubsub_wasm' build argument 'ament_cmake_args' from command line to 'None'
+[1.869s] Level 5:colcon.colcon_core.verb:set package 'pubsub_wasm' build argument 'catkin_cmake_args' from command line to 'None'
+[1.869s] Level 5:colcon.colcon_core.verb:set package 'pubsub_wasm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.869s] DEBUG:colcon.colcon_core.verb:Building package 'pubsub_wasm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm', 'merge_install': False, 'path': '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm', 'symlink_install': False, 'test_result_base': None}
+[1.871s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.921s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.922s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm' with build type 'ament_cmake'
+[1.923s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm'
+[1.942s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.943s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.944s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.973s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[2.012s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm -- -j4 -l4
+[4.286s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm -- -j4 -l4
+[4.378s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pubsub_wasm)
+[4.394s] Level 1:colcon.colcon_core.environment:checking '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm' for CMake module files
+[4.398s] Level 1:colcon.colcon_core.environment:checking '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm' for CMake config files
+[4.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('pubsub_wasm', 'cmake_prefix_path')
+[4.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm/share/pubsub_wasm/hook/cmake_prefix_path.ps1'
+[4.406s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm/share/pubsub_wasm/hook/cmake_prefix_path.dsv'
+[4.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm/share/pubsub_wasm/hook/cmake_prefix_path.sh'
+[4.414s] Level 1:colcon.colcon_core.environment:checking '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm/lib'
+[4.415s] Level 1:colcon.colcon_core.environment:checking '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm/bin'
+[4.415s] Level 1:colcon.colcon_core.environment:checking '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm/lib/pkgconfig/pubsub_wasm.pc'
+[4.416s] Level 1:colcon.colcon_core.environment:checking '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm/lib/python3.6/site-packages'
+[4.419s] INFO:colcon.colcon_core.shell:Creating package script '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm/share/pubsub_wasm/package.ps1'
+[4.425s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm/share/pubsub_wasm/package.dsv'
+[4.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm/share/pubsub_wasm/package.sh'
+[4.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm/share/pubsub_wasm/package.bash'
+[4.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm/share/pubsub_wasm/package.zsh'
+[4.441s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm/share/colcon-core/packages/pubsub_wasm)
+[4.454s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.455s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.455s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[4.456s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.479s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.480s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.480s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.514s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.Notifications exited with status 1
+[4.515s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.519s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/local_setup.ps1'
+[4.525s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/_local_setup_util_ps1.py'
+[4.534s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/setup.ps1'
+[4.548s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/local_setup.sh'
+[4.551s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/_local_setup_util_sh.py'
+[4.553s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/setup.sh'
+[4.567s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/local_setup.bash'
+[4.569s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/setup.bash'
+[4.584s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/local_setup.zsh'
+[4.586s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/setup.zsh'

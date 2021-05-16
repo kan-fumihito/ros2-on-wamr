@@ -63,12 +63,12 @@ void init_wamr(void)
       {
           {
               "bar",   // the name of WASM function name
-              (void*)bar,     // the native function pointer
+               bar,     // the native function pointer
               "(iiii)" // the function prototype signature
           },
           {
               "foo",  // the name of WASM function name
-              (void*)foo,    // the native function pointer
+               foo,    // the native function pointer
               "(ii)i" // the function prototype signature
           }};
 
@@ -95,10 +95,12 @@ int main(int argc, char *argv[])
   fseek(fp, 0, SEEK_END);
   size = ftell(fp);
   fseek(fp, 0, SEEK_SET);
-  const uint8_t *buffer = (uint8_t*)malloc(sizeof(char) * size);
+  uint8_t *buffer = (uint8_t*)malloc(sizeof(char) * size);
   fread(buffer, sizeof(char), size, fp);
 
   init_wamr();
+
+  printf("Hello, ROS2\n");
 
   // natives registeration must be done before loading WASM modules
   module = wasm_runtime_load(buffer, size, error_buf, sizeof(error_buf));

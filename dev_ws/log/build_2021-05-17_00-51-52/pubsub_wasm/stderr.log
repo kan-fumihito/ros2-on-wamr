@@ -1,0 +1,34 @@
+In file included from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Kint foo(wasm_exec_env_t, int, int)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:6:25:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ int foo([01;35m[Kwasm_exec_env_t exec_env[m[K, int a, int b)
+         [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Kvoid bar(wasm_exec_env_t, int, int, int, int)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:12:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void bar([01;35m[Kwasm_exec_env_t exec_env[m[K, int a, int b, int c, int d)
+          [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:[m[K In function ‘[01m[Kvoid init_wamr()[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:73:12:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+           }[01;35m[K}[m[K;
+            [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:73:12:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:99:9:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst void*[m[K’ to ‘[01m[Kvoid*[m[K’ [[01;31m[K-fpermissive[m[K]
+   fread([01;31m[Kbuffer[m[K, sizeof(char), size, fp);
+         [01;31m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/c++/8/cstdio:42[m[K,
+                 from [01m[K/usr/include/c++/8/ext/string_conversions.h:43[m[K,
+                 from [01m[K/usr/include/c++/8/bits/basic_string.h:6400[m[K,
+                 from [01m[K/usr/include/c++/8/string:52[m[K,
+                 from [01m[K/usr/include/c++/8/stdexcept:39[m[K,
+                 from [01m[K/usr/include/c++/8/array:39[m[K,
+                 from [01m[K/usr/include/c++/8/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/8/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/8/memory:80[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:16[m[K:
+[01m[K/usr/include/stdio.h:646:39:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Ksize_t fread(void*, size_t, size_t, FILE*)[m[K’
+ extern size_t fread ([01;36m[Kvoid *__restrict __ptr[m[K, size_t __size,
+                      [01;36m[K~~~~~~~~~~~~~~~~~^~~~~[m[K
+make[2]: *** [CMakeFiles/talker_wasm.dir/src/wasm_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/talker_wasm.dir/all] Error 2
+make: *** [all] Error 2

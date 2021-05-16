@@ -1,0 +1,29 @@
+[0.000000] (-) TimerEvent: {}
+[0.003753] (pubsub_wasm) JobQueued: {'identifier': 'pubsub_wasm', 'dependencies': OrderedDict()}
+[0.003944] (pubsub_wasm) JobStarted: {'identifier': 'pubsub_wasm'}
+[0.050062] (pubsub_wasm) JobProgress: {'identifier': 'pubsub_wasm', 'progress': 'cmake'}
+[0.053102] (pubsub_wasm) Command: {'cmd': ['/usr/bin/cmake', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm', '-DCMAKE_INSTALL_PREFIX=/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm'], 'cwd': '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm', 'env': OrderedDict([('MAIL', '/var/mail/oss'), ('USER', 'oss'), ('SSH_CLIENT', '192.168.0.2 58494 22'), ('LANGUAGE', 'ja:en_US:en'), ('LC_TIME', 'ja_JP.UTF-8'), ('SHLVL', '1'), ('OLDPWD', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws'), ('HOME', '/home/oss'), ('SSH_TTY', '/dev/pts/1'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'oss'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm'), ('PATH', '/usr/local/opt/llvm/bin:/home/oss/.cargo/bin:/usr/local/opt/llvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'ja_JP.UTF-8'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('LC_NAME', 'ja_JP.UTF-8'), ('SHELL', '/bin/bash'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('PWD', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm'), ('SSH_CONNECTION', '192.168.0.2 58494 192.168.0.6 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.112816] (-) TimerEvent: {}
+[0.145437] (pubsub_wasm) StderrLine: {'line': b'CMake Error at CMakeLists.txt:21 (find_package):\n'}
+[0.146428] (pubsub_wasm) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.147048] (pubsub_wasm) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.147601] (pubsub_wasm) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.148112] (pubsub_wasm) StderrLine: {'line': b'\n'}
+[0.148614] (pubsub_wasm) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.149132] (pubsub_wasm) StderrLine: {'line': b'  any of the following names:\n'}
+[0.149614] (pubsub_wasm) StderrLine: {'line': b'\n'}
+[0.150153] (pubsub_wasm) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.151111] (pubsub_wasm) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.151971] (pubsub_wasm) StderrLine: {'line': b'\n'}
+[0.152879] (pubsub_wasm) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.154261] (pubsub_wasm) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.155374] (pubsub_wasm) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.156484] (pubsub_wasm) StderrLine: {'line': b'  has been installed.\n'}
+[0.160170] (pubsub_wasm) StderrLine: {'line': b'\n'}
+[0.161331] (pubsub_wasm) StderrLine: {'line': b'\n'}
+[0.161858] (pubsub_wasm) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.162494] (pubsub_wasm) StdoutLine: {'line': b'See also "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/build/pubsub_wasm/CMakeFiles/CMakeOutput.log".\n'}
+[0.165608] (pubsub_wasm) CommandEnded: {'returncode': 1}
+[0.213146] (-) TimerEvent: {}
+[0.249456] (pubsub_wasm) JobEnded: {'identifier': 'pubsub_wasm', 'rc': 1}
+[0.261543] (-) EventReactorShutdown: {}
