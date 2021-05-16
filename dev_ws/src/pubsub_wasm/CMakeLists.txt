@@ -3,10 +3,6 @@ project(pubsub_wasm)
 include_directories(~/.wasmer/include)
 link_directories(~/.wasmer/lib)
 
-CFLAGS = -g -I$(shell $(WASMER_DIR)/bin/wasmer config --includedir)
-LDFLAGS = -Wl,-rpath,$(shell $(WASMER_DIR)/bin/wasmer config --libdir)
-LDLIBS = $(shell $(WASMER_DIR)/bin/wasmer config --libs)
-
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
   set(CMAKE_C_STANDARD 99)
