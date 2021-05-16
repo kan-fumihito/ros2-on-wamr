@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(pubsub_wasm)
+include_directories(~/.wasmer/include)
+link_directories(~/.wasmer/lib)
 
 CFLAGS = -g -I$(shell $(WASMER_DIR)/bin/wasmer config --includedir)
 LDFLAGS = -Wl,-rpath,$(shell $(WASMER_DIR)/bin/wasmer config --libdir)
@@ -38,9 +40,12 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 add_executable(talker src/publisher_member_function.cpp)
+add_executable(talker_wasm src/wasm_node.cpp)
 ament_target_dependencies(talker rclcpp std_msgs)
+ament_target_dependencies(talker_wasm rclcpp std_msgs)
 
-target_link_libraries(talker iwasm)
+target_link_libraries(talker wasmer)
+target_link_libraries(talker_wasm iwasm)
 
 install(TARGETS
 	talker

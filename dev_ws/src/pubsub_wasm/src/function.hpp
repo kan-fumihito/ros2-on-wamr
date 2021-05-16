@@ -2,8 +2,6 @@
 #include <wasm_c_api.h>
 #include <wasm_export.h>
 #include <stdio.h>
-#include <stdlib.h>
-#include <chrono>
 
 int foo(wasm_exec_env_t exec_env, int a, int b)
 {
