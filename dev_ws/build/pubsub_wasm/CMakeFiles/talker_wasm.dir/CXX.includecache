@@ -13,6 +13,18 @@ wasm_export.h
 -
 stdio.h
 -
+map
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+rclcpp/rclcpp.hpp
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/rclcpp/rclcpp.hpp
+std_msgs/msg/string.hpp
+/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/std_msgs/msg/string.hpp
 
 /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp
 chrono

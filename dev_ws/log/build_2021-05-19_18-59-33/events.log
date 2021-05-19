@@ -1,0 +1,151 @@
+[0.000000] (-) TimerEvent: {}
+[0.000642] (pubsub_wasm) JobQueued: {'identifier': 'pubsub_wasm', 'dependencies': OrderedDict()}
+[0.000858] (pubsub_wasm) JobStarted: {'identifier': 'pubsub_wasm'}
+[0.055512] (-) TimerEvent: {}
+[0.067197] (pubsub_wasm) JobProgress: {'identifier': 'pubsub_wasm', 'progress': 'cmake'}
+[0.069863] (pubsub_wasm) JobProgress: {'identifier': 'pubsub_wasm', 'progress': 'build'}
+[0.073724] (pubsub_wasm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm', '--', '-j4', '-l4'], 'cwd': '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/oss'), ('USER', 'oss'), ('SSH_CLIENT', '192.168.0.2 61554 22'), ('LANGUAGE', 'ja:en_US:en'), ('LC_TIME', 'ja_JP.UTF-8'), ('OSPL_INFOFILE', '<stdout>'), ('GIT_ASKPASS', '/home/oss/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/lib:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/opt/yaml_cpp_vendor/lib:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/opt/rviz_ogre_vendor/lib:/usr/lib:/opt/ros/dashing/lib'), ('BROWSER', '/home/oss/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/bin/helpers/browser.sh'), ('SHLVL', '4'), ('OLDPWD', '/home/oss/b1018262/ROS/ros2-on-wasmer'), ('OSPL_URI', 'file:///home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/opensplice_cmake_module/config/ros_ospl.xml'), ('HOME', '/home/oss'), ('TERM_PROGRAM_VERSION', '1.56.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-249b1dd6-a045-43ca-a464-810d2bd098a9.sock'), ('OSPL_VERBOSITY', '2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/oss/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/oss/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('OSPL_TMPL_PATH', '/usr/etc/opensplice/idlpp'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux:/home/oss/b1018262/ROS/ros2-on-wasmer/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'oss'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/lib/pkgconfig'), ('XDG_SESSION_ID', '4'), ('TERM', 'xterm-256color'), ('OSPL_ERRORFILE', '<stderr>'), ('PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/bin:/home/oss/.wasmer/bin:/home/oss/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/bin:/home/oss/.cargo/bin:/usr/local/opt/llvm/bin:/home/oss/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/oss/.wasmer/globals/wapm_packages/.bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'ja_JP.UTF-8'), ('OSPL_HOME', '/usr'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-1d5233f069.sock'), ('AMENT_PREFIX_PATH', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux:/home/oss/b1018262/ROS/ros2-on-wasmer/install/pubsub_wasm:/opt/ros/dashing'), ('LC_NAME', 'ja_JP.UTF-8'), ('SHELL', '/bin/bash'), ('WASMER_DIR', '/home/oss/.wasmer'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('PWD', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm'), ('SSH_CONNECTION', '192.168.0.2 61554 192.168.0.6 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('WASMER_CACHE_DIR', '/home/oss/.wasmer/cache'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('PYTHONPATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux:/home/oss/b1018262/ROS/ros2-on-wasmer/install/pubsub_wasm:/opt/ros/dashing')]), 'shell': False}
+[0.155664] (-) TimerEvent: {}
+[0.246156] (pubsub_wasm) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target talker_wasm\x1b[0m\n'}
+[0.255851] (-) TimerEvent: {}
+[0.302300] (pubsub_wasm) StdoutLine: {'line': b'[ 50%] Built target talker_node\n'}
+[0.338727] (pubsub_wasm) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/talker_wasm.dir/src/wasm_node.cpp.o\x1b[0m\n'}
+[0.356091] (-) TimerEvent: {}
+[0.456884] (-) TimerEvent: {}
+[0.557718] (-) TimerEvent: {}
+[0.658557] (-) TimerEvent: {}
+[0.759481] (-) TimerEvent: {}
+[0.860287] (-) TimerEvent: {}
+[0.961087] (-) TimerEvent: {}
+[1.061878] (-) TimerEvent: {}
+[1.162683] (-) TimerEvent: {}
+[1.263535] (-) TimerEvent: {}
+[1.364342] (-) TimerEvent: {}
+[1.465138] (-) TimerEvent: {}
+[1.565950] (-) TimerEvent: {}
+[1.666736] (-) TimerEvent: {}
+[1.767580] (-) TimerEvent: {}
+[1.868382] (-) TimerEvent: {}
+[1.969189] (-) TimerEvent: {}
+[2.069986] (-) TimerEvent: {}
+[2.170779] (-) TimerEvent: {}
+[2.271654] (-) TimerEvent: {}
+[2.372459] (-) TimerEvent: {}
+[2.473272] (-) TimerEvent: {}
+[2.574083] (-) TimerEvent: {}
+[2.674948] (-) TimerEvent: {}
+[2.775751] (-) TimerEvent: {}
+[2.876550] (-) TimerEvent: {}
+[2.977356] (-) TimerEvent: {}
+[3.078170] (-) TimerEvent: {}
+[3.178982] (-) TimerEvent: {}
+[3.279794] (-) TimerEvent: {}
+[3.380591] (-) TimerEvent: {}
+[3.481398] (-) TimerEvent: {}
+[3.582222] (-) TimerEvent: {}
+[3.683032] (-) TimerEvent: {}
+[3.783843] (-) TimerEvent: {}
+[3.884650] (-) TimerEvent: {}
+[3.985457] (-) TimerEvent: {}
+[4.086262] (-) TimerEvent: {}
+[4.187066] (-) TimerEvent: {}
+[4.287866] (-) TimerEvent: {}
+[4.388611] (-) TimerEvent: {}
+[4.401383] (pubsub_wasm) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20\x1b[m\x1b[K:\n'}
+[4.402147] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Ku32 create_node_wasm(wasm_exec_env_t, char*, u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.402695] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:23:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kexec_env\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.403335] (pubsub_wasm) StderrLine: {'line': b' u32 create_node_wasm(\x1b[01;35m\x1b[Kwasm_exec_env_t exec_env\x1b[m\x1b[K, char *s, u32 len)\n'}
+[4.403811] (pubsub_wasm) StderrLine: {'line': b'                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[4.470425] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Ku32 create_publisher_wasm(wasm_exec_env_t, u32, char*, u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.471247] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:37:43:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kexec_env\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.471775] (pubsub_wasm) StderrLine: {'line': b' u32 create_publisher_wasm(\x1b[01;35m\x1b[Kwasm_exec_env_t exec_env\x1b[m\x1b[K, u32 node_id, char *s, u32 len)\n'}
+[4.472265] (pubsub_wasm) StderrLine: {'line': b'                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[4.488857] (-) TimerEvent: {}
+[4.506914] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid publish_wasm(wasm_exec_env_t, u32, char*, u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.507673] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:51:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kexec_env\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.508250] (pubsub_wasm) StderrLine: {'line': b' void publish_wasm(\x1b[01;35m\x1b[Kwasm_exec_env_t exec_env\x1b[m\x1b[K, u32 publisher_id, char* s, u32 len)\n'}
+[4.509215] (pubsub_wasm) StderrLine: {'line': b'                   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[4.509695] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid init_wamr()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.510181] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Ku32 (*)(wasm_exec_env_t, char*, u32)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int (*)(WASMExecEnv*, char*, unsigned int)\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kvoid*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.510731] (pubsub_wasm) StderrLine: {'line': b'       \x1b[01;35m\x1b[K}\x1b[m\x1b[K;\n'}
+[4.511343] (pubsub_wasm) StderrLine: {'line': b'       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.511834] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KNativeSymbol::attachment\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wmissing-field-initializers\x1b[m\x1b[K]\n'}
+[4.512336] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Ku32 (*)(wasm_exec_env_t, u32, char*, u32)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int (*)(WASMExecEnv*, unsigned int, char*, unsigned int)\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kvoid*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.512880] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KNativeSymbol::attachment\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wmissing-field-initializers\x1b[m\x1b[K]\n'}
+[4.513357] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kvoid (*)(wasm_exec_env_t, u32, char*, u32)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kvoid (*)(WASMExecEnv*, unsigned int, char*, unsigned int)\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kvoid*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.513868] (pubsub_wasm) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KNativeSymbol::attachment\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wmissing-field-initializers\x1b[m\x1b[K]\n'}
+[4.589043] (-) TimerEvent: {}
+[4.689867] (-) TimerEvent: {}
+[4.790607] (-) TimerEvent: {}
+[4.891548] (-) TimerEvent: {}
+[4.992365] (-) TimerEvent: {}
+[5.093170] (-) TimerEvent: {}
+[5.193981] (-) TimerEvent: {}
+[5.294894] (-) TimerEvent: {}
+[5.395705] (-) TimerEvent: {}
+[5.496513] (-) TimerEvent: {}
+[5.597332] (-) TimerEvent: {}
+[5.698148] (-) TimerEvent: {}
+[5.799001] (-) TimerEvent: {}
+[5.899803] (-) TimerEvent: {}
+[6.000626] (-) TimerEvent: {}
+[6.101456] (-) TimerEvent: {}
+[6.202254] (-) TimerEvent: {}
+[6.303068] (-) TimerEvent: {}
+[6.403861] (-) TimerEvent: {}
+[6.504666] (-) TimerEvent: {}
+[6.605472] (-) TimerEvent: {}
+[6.706288] (-) TimerEvent: {}
+[6.807143] (-) TimerEvent: {}
+[6.907886] (-) TimerEvent: {}
+[7.008687] (-) TimerEvent: {}
+[7.109433] (-) TimerEvent: {}
+[7.210237] (-) TimerEvent: {}
+[7.310968] (-) TimerEvent: {}
+[7.411698] (-) TimerEvent: {}
+[7.512503] (-) TimerEvent: {}
+[7.613295] (-) TimerEvent: {}
+[7.714071] (-) TimerEvent: {}
+[7.814869] (-) TimerEvent: {}
+[7.915595] (-) TimerEvent: {}
+[8.016375] (-) TimerEvent: {}
+[8.117171] (-) TimerEvent: {}
+[8.222353] (-) TimerEvent: {}
+[8.288910] (pubsub_wasm) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable talker_wasm\x1b[0m\n'}
+[8.322033] (-) TimerEvent: {}
+[8.422912] (-) TimerEvent: {}
+[8.523744] (-) TimerEvent: {}
+[8.624551] (-) TimerEvent: {}
+[8.725343] (-) TimerEvent: {}
+[8.803968] (pubsub_wasm) StdoutLine: {'line': b'[100%] Built target talker_wasm\n'}
+[8.825594] (-) TimerEvent: {}
+[8.844394] (pubsub_wasm) CommandEnded: {'returncode': 0}
+[8.925830] (-) TimerEvent: {}
+[8.942667] (pubsub_wasm) JobProgress: {'identifier': 'pubsub_wasm', 'progress': 'install'}
+[8.982611] (pubsub_wasm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm', '--target', 'install', '--', '-j4', '-l4'], 'cwd': '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/oss'), ('USER', 'oss'), ('SSH_CLIENT', '192.168.0.2 61554 22'), ('LANGUAGE', 'ja:en_US:en'), ('LC_TIME', 'ja_JP.UTF-8'), ('OSPL_INFOFILE', '<stdout>'), ('GIT_ASKPASS', '/home/oss/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/lib:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/opt/yaml_cpp_vendor/lib:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/opt/rviz_ogre_vendor/lib:/usr/lib:/opt/ros/dashing/lib'), ('BROWSER', '/home/oss/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/bin/helpers/browser.sh'), ('SHLVL', '4'), ('OLDPWD', '/home/oss/b1018262/ROS/ros2-on-wasmer'), ('OSPL_URI', 'file:///home/oss/b1018262/ROS/ros2_dashing/ros2-linux/share/opensplice_cmake_module/config/ros_ospl.xml'), ('HOME', '/home/oss'), ('TERM_PROGRAM_VERSION', '1.56.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-249b1dd6-a045-43ca-a464-810d2bd098a9.sock'), ('OSPL_VERBOSITY', '2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/oss/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/oss/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('OSPL_TMPL_PATH', '/usr/etc/opensplice/idlpp'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux:/home/oss/b1018262/ROS/ros2-on-wasmer/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'oss'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/lib/pkgconfig'), ('XDG_SESSION_ID', '4'), ('TERM', 'xterm-256color'), ('OSPL_ERRORFILE', '<stderr>'), ('PATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/bin:/home/oss/.wasmer/bin:/home/oss/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/bin:/home/oss/.cargo/bin:/usr/local/opt/llvm/bin:/home/oss/.vscode-server/bin/054a9295330880ed74ceaedda236253b4f39a335/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/oss/.wasmer/globals/wapm_packages/.bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'ja_JP.UTF-8'), ('OSPL_HOME', '/usr'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-1d5233f069.sock'), ('AMENT_PREFIX_PATH', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux:/home/oss/b1018262/ROS/ros2-on-wasmer/install/pubsub_wasm:/opt/ros/dashing'), ('LC_NAME', 'ja_JP.UTF-8'), ('SHELL', '/bin/bash'), ('WASMER_DIR', '/home/oss/.wasmer'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('PWD', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/build/pubsub_wasm'), ('SSH_CONNECTION', '192.168.0.2 61554 192.168.0.6 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('WASMER_CACHE_DIR', '/home/oss/.wasmer/cache'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('PYTHONPATH', '/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm:/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install/pubsub_wasm:/home/oss/b1018262/ROS/ros2_dashing/ros2-linux:/home/oss/b1018262/ROS/ros2-on-wasmer/install/pubsub_wasm:/opt/ros/dashing')]), 'shell': False}
+[9.026101] (-) TimerEvent: {}
+[9.127095] (-) TimerEvent: {}
+[9.198481] (pubsub_wasm) StdoutLine: {'line': b'[100%] Built target talker_wasm\n'}
+[9.199377] (pubsub_wasm) StdoutLine: {'line': b'[100%] Built target talker_node\n'}
+[9.227288] (-) TimerEvent: {}
+[9.268646] (pubsub_wasm) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[9.301957] (pubsub_wasm) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.302868] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_node\n'}
+[9.304343] (pubsub_wasm) StdoutLine: {'line': b'-- Installing: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_wasm\n'}
+[9.308142] (pubsub_wasm) StdoutLine: {'line': b'-- Set runtime path of "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_wasm" to ""\n'}
+[9.309116] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/ament_index/resource_index/package_run_dependencies/pubsub_wasm\n'}
+[9.309972] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/ament_index/resource_index/parent_prefix_path/pubsub_wasm\n'}
+[9.310532] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/environment/ament_prefix_path.sh\n'}
+[9.311352] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/environment/path.sh\n'}
+[9.311843] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/local_setup.bash\n'}
+[9.312284] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/local_setup.sh\n'}
+[9.312766] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/local_setup.zsh\n'}
+[9.313273] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/ament_index/resource_index/packages/pubsub_wasm\n'}
+[9.313783] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/cmake/pubsub_wasmConfig.cmake\n'}
+[9.314295] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/cmake/pubsub_wasmConfig-version.cmake\n'}
+[9.314797] (pubsub_wasm) StdoutLine: {'line': b'-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/package.xml\n'}
+[9.321635] (pubsub_wasm) CommandEnded: {'returncode': 0}
+[9.327522] (-) TimerEvent: {}
+[9.428307] (-) TimerEvent: {}
+[9.524731] (pubsub_wasm) JobEnded: {'identifier': 'pubsub_wasm', 'rc': 0}
+[9.527777] (-) EventReactorShutdown: {}

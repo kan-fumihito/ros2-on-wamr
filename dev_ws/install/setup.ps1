@@ -23,6 +23,7 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "/opt/ros/dashing\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/oss/b1018262/ROS/ros2-on-wasmer/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/oss/b1018262/ROS/ros2_dashing/ros2-linux\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/install\local_setup.ps1"
 

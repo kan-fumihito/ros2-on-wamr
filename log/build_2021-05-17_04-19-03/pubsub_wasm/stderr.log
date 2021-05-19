@@ -1,0 +1,16 @@
+In file included from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Kint foo(wasm_exec_env_t, int, int)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:6:25:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ int foo([01;35m[Kwasm_exec_env_t exec_env[m[K, int a, int b)
+         [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Kvoid bar(wasm_exec_env_t, int, int, int, int)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:12:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void bar([01;35m[Kwasm_exec_env_t exec_env[m[K, int a, int b, int c, int d)
+          [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:[m[K In function ‘[01m[Kvoid init_wamr()[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:74:12:[m[K [01;35m[Kwarning: [m[Kinvalid conversion from ‘[01m[Kvoid (*)(wasm_exec_env_t, int, int, int, int)[m[K’ {aka ‘[01m[Kvoid (*)(WASMExecEnv*, int, int, int, int)[m[K’} to ‘[01m[Kvoid*[m[K’ [[01;35m[K-fpermissive[m[K]
+           }[01;35m[K}[m[K;
+            [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:74:12:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:74:12:[m[K [01;35m[Kwarning: [m[Kinvalid conversion from ‘[01m[Kint (*)(wasm_exec_env_t, int, int)[m[K’ {aka ‘[01m[Kint (*)(WASMExecEnv*, int, int)[m[K’} to ‘[01m[Kvoid*[m[K’ [[01;35m[K-fpermissive[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:74:12:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]

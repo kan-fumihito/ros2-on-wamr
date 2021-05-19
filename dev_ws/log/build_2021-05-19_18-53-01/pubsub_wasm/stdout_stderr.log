@@ -1,0 +1,45 @@
+[35m[1mScanning dependencies of target talker_wasm[0m
+[ 50%] Built target talker_node
+[ 75%] [32mBuilding CXX object CMakeFiles/talker_wasm.dir/src/wasm_node.cpp.o[0m
+In file included from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Ku32 create_node_wasm(wasm_exec_env_t, char*, u32)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:23:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ u32 create_node_wasm([01;35m[Kwasm_exec_env_t exec_env[m[K, char *s, u32 len)
+                      [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Ku32 create_publisher_wasm(wasm_exec_env_t, u32, char*, u32)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:36:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ u32 create_publisher_wasm([01;35m[Kwasm_exec_env_t exec_env[m[K, u32 node_id, char *s, u32 len)
+                           [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Kvoid publish_wasm(wasm_exec_env_t, u32, char*, u32)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:50:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void publish_wasm([01;35m[Kwasm_exec_env_t exec_env[m[K, u32 publisher_id, char* s, u32 len)
+                   [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:[m[K In function ‘[01m[Kvoid init_wamr()[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kinvalid conversion from ‘[01m[Ku32 (*)(wasm_exec_env_t, char*, u32)[m[K’ {aka ‘[01m[Kunsigned int (*)(WASMExecEnv*, char*, unsigned int)[m[K’} to ‘[01m[Kvoid*[m[K’ [[01;35m[K-fpermissive[m[K]
+       [01;35m[K}[m[K;
+       [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kinvalid conversion from ‘[01m[Ku32 (*)(wasm_exec_env_t, u32, char*, u32)[m[K’ {aka ‘[01m[Kunsigned int (*)(WASMExecEnv*, unsigned int, char*, unsigned int)[m[K’} to ‘[01m[Kvoid*[m[K’ [[01;35m[K-fpermissive[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kinvalid conversion from ‘[01m[Kvoid (*)(wasm_exec_env_t, u32, char*, u32)[m[K’ {aka ‘[01m[Kvoid (*)(WASMExecEnv*, unsigned int, char*, unsigned int)[m[K’} to ‘[01m[Kvoid*[m[K’ [[01;35m[K-fpermissive[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+[100%] [32m[1mLinking CXX executable talker_wasm[0m
+[100%] Built target talker_wasm
+[100%] Built target talker_node
+[100%] Built target talker_wasm
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_node
+-- Installing: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_wasm
+-- Set runtime path of "/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/lib/pubsub_wasm/talker_wasm" to ""
+-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/ament_index/resource_index/package_run_dependencies/pubsub_wasm
+-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/ament_index/resource_index/parent_prefix_path/pubsub_wasm
+-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/environment/ament_prefix_path.sh
+-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/environment/path.sh
+-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/local_setup.bash
+-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/local_setup.sh
+-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/local_setup.zsh
+-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/ament_index/resource_index/packages/pubsub_wasm
+-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/cmake/pubsub_wasmConfig.cmake
+-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/cmake/pubsub_wasmConfig-version.cmake
+-- Up-to-date: /home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/install/pubsub_wasm/share/pubsub_wasm/package.xml

@@ -24,32 +24,6 @@
 
 using namespace std::chrono_literals;
 
-/* This example creates a subclass of Node and uses std::bind() to register a
- * member function as a callback from the timer. */
-
-class MinimalPublisher : public rclcpp::Node
-{
-public:
-  MinimalPublisher()
-      : Node("minimal_publisher"), count_(0)
-  {
-    publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
-    timer_ = this->create_wall_timer(
-        500ms, std::bind(&MinimalPublisher::timer_callback, this));
-  }
-
-private:
-  void timer_callback()
-  {
-    auto message = std_msgs::msg::String();
-    message.data = "Hello, world! " + std::to_string(count_++);
-    RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
-    publisher_->publish(message);
-  }
-  rclcpp::TimerBase::SharedPtr timer_;
-  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
-  size_t count_;
-};
 
 void init_wamr(void)
 {
@@ -61,16 +35,32 @@ void init_wamr(void)
   //       will keep it after registration
   static NativeSymbol native_symbols[] =
       {
-          {
-              "bar",   // the name of WASM function name
-               bar,     // the native function pointer
-              "(iiii)" // the function prototype signature
-          },
-          {
-              "foo",  // the name of WASM function name
-               foo,    // the native function pointer
-              "(ii)i" // the function prototype signature
-          }};
+        {
+          "create_node_wasm",
+          create_node_wasm,
+          "(*~)i"
+        },
+        {
+          "create_publisher_wasm",
+          create_publisher_wasm,
+          "(i*~)i"
+        },
+        {
+          "publish_wasm",
+          publish_wasm,
+          "(i*~)"
+        },
+        {
+          "wait_1000ms",
+          wait_1000ms,
+          "()"
+        },
+        {
+          "spin_wasm",
+          spin_wasm,
+          "(i)"
+        }
+      };
 
   int n_native_symbols = sizeof(native_symbols) / sizeof(NativeSymbol);
   if (!wasm_runtime_register_natives("env",
@@ -98,45 +88,28 @@ int main(int argc, char *argv[])
   uint8_t *buffer = (uint8_t*)malloc(sizeof(char) * size);
   fread(buffer, sizeof(char), size, fp);
 
+  rclcpp::init(argc, argv);
   init_wamr();
 
-  printf("Hello, ROS2\n");
-
-  // natives registeration must be done before loading WASM modules
   module = wasm_runtime_load(buffer, size, error_buf, sizeof(error_buf));
-
-  /* create an instance of the WASM module (WASM linear memory is ready) */
   module_inst = wasm_runtime_instantiate(module, stack_size, heap_size, error_buf, sizeof(error_buf));
-
-  /* lookup a WASM function by its name
-     The function signature can NULL here */
   func = wasm_runtime_lookup_function(module_inst, "ros_main", NULL);
-
-  /* creat an execution environment to execute the WASM functions */
   exec_env = wasm_runtime_create_exec_env(module_inst, stack_size);
 
   uint32_t args[2] = {};
-
-  /* arguments are always transferred in 32-bit element */
 
   if(func==NULL){
 	  printf("Func is NULL\n");
 	  return 1;
   }
-  /* call the WASM function */
   if (wasm_runtime_call_wasm(exec_env, func, 0, args))
   {
-    /* the return value is stored in argv[0] */
     printf("wasm_main function return: %d\n", args[0]);
   }
   else
   {
-    /* exception is thrown if call fails */
     printf("%s\n", wasm_runtime_get_exception(module_inst));
   }
 
-  rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<MinimalPublisher>());
-  rclcpp::shutdown();
   return 0;
 }

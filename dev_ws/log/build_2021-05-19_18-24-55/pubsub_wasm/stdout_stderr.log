@@ -1,0 +1,84 @@
+[35m[1mScanning dependencies of target talker_wasm[0m
+[ 50%] Built target talker_node
+[ 75%] [32mBuilding CXX object CMakeFiles/talker_wasm.dir/src/wasm_node.cpp.o[0m
+In file included from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:17:29:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 2 in template parameter list for ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> class std::map[m[K’
+   map<u32, rclcpp::Publisher[01;31m[K>[m[K publishers;
+                             [01;31m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:17:29:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[KPublisher[m[K’
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:17:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Kint foo(wasm_exec_env_t, int, int)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:25:25:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ int foo([01;35m[Kwasm_exec_env_t exec_env[m[K, int a, int b)
+         [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Kvoid bar(wasm_exec_env_t, int, int, int, int)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:31:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void bar([01;35m[Kwasm_exec_env_t exec_env[m[K, int a, int b, int c, int d)
+          [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Ku32 create_node_wasm(wasm_exec_env_t, char*)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:42:18:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Knodes[m[K’ in ‘[01m[Kros_data[m[K’, which is of non-class type ‘[01m[KRosData()[m[K’
+   while(ros_data.[01;31m[Knodes[m[K.count(id)>0){
+                  [01;31m[K^~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:45:12:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Knodes[m[K’ in ‘[01m[Kros_data[m[K’, which is of non-class type ‘[01m[KRosData()[m[K’
+   ros_data.[01;31m[Knodes[m[K.insert(make_pair(id,node));
+            [01;31m[K^~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:38:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ u32 create_node_wasm([01;35m[Kwasm_exec_env_t exec_env[m[K, char *node_name)
+                      [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Ku32 create_publisher_wasm(wasm_exec_env_t, u32, char*)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:51:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Knodes[m[K’ in ‘[01m[Kros_data[m[K’, which is of non-class type ‘[01m[KRosData()[m[K’
+   auto node = ros_data.[01;31m[Knodes[m[K[node_id];
+                        [01;31m[K^~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:52:64:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   auto publisher = node->create_publisher<std_msgs::msg::String[01;31m[K>[m[K(topic_name, 10);
+                                                                [01;31m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:52:78:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   auto publisher = node->create_publisher<std_msgs::msg::String>(topic_name, [01;35m[K10[m[K);
+                                                                              [01;35m[K^~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:54:18:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpublishers[m[K’ in ‘[01m[Kros_data[m[K’, which is of non-class type ‘[01m[KRosData()[m[K’
+   while(ros_data.[01;31m[Kpublishers[m[K.count(id)>0){
+                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:57:12:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpublishers[m[K’ in ‘[01m[Kros_data[m[K’, which is of non-class type ‘[01m[KRosData()[m[K’
+   ros_data.[01;31m[Kpublishers[m[K.insert(make_pair(id,publisher));
+            [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:57:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_pair[m[K’ was not declared in this scope
+   ros_data.publishers.insert([01;31m[Kmake_pair[m[K(id,publisher));
+                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:57:30:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/c++/8/bits/stl_algobase.h:64[m[K,
+                 from [01m[K/usr/include/c++/8/memory:62[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:16[m[K:
+[01m[K/usr/include/c++/8/bits/stl_pair.h:524:5:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::make_pair[m[K’
+     [01;36m[Kmake_pair[m[K(_T1&& __x, _T2&& __y)
+     [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:49:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ u32 create_publisher_wasm([01;35m[Kwasm_exec_env_t exec_env[m[K, u32 node_id, char *topic_name)
+                           [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Kvoid publish_wasm(wasm_exec_env_t, u32, char*)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:64:29:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpublishers[m[K’ in ‘[01m[Kros_data[m[K’, which is of non-class type ‘[01m[KRosData()[m[K’
+   auto publisher = ros_data.[01;31m[Kpublishers[m[K[publisher_id];
+                             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:61:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void publish_wasm([01;35m[Kwasm_exec_env_t exec_env[m[K, u32 publisher_id, char* msg)
+                   [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:[m[K In function ‘[01m[Kvoid init_wamr()[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kinvalid conversion from ‘[01m[Ku32 (*)(wasm_exec_env_t, char*)[m[K’ {aka ‘[01m[Kunsigned int (*)(WASMExecEnv*, char*)[m[K’} to ‘[01m[Kvoid*[m[K’ [[01;35m[K-fpermissive[m[K]
+       [01;35m[K}[m[K;
+       [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kinvalid conversion from ‘[01m[Ku32 (*)(wasm_exec_env_t, u32, char*)[m[K’ {aka ‘[01m[Kunsigned int (*)(WASMExecEnv*, unsigned int, char*)[m[K’} to ‘[01m[Kvoid*[m[K’ [[01;35m[K-fpermissive[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kinvalid conversion from ‘[01m[Kvoid (*)(wasm_exec_env_t, u32, char*)[m[K’ {aka ‘[01m[Kvoid (*)(WASMExecEnv*, unsigned int, char*)[m[K’} to ‘[01m[Kvoid*[m[K’ [[01;35m[K-fpermissive[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+In file included from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K At global scope:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:23:16:[m[K [01;35m[Kwarning: [m[K‘[01m[KRosData ros_data()[m[K’ declared ‘[01m[Kstatic[m[K’ but never defined [[01;35m[K-Wunused-function[m[K]
+ static RosData [01;35m[Kros_data[m[K();
+                [01;35m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/talker_wasm.dir/src/wasm_node.cpp.o] Error 1
+CMakeFiles/talker_wasm.dir/build.make:62: recipe for target 'CMakeFiles/talker_wasm.dir/src/wasm_node.cpp.o' failed
+CMakeFiles/Makefile2:136: recipe for target 'CMakeFiles/talker_wasm.dir/all' failed
+make[1]: *** [CMakeFiles/talker_wasm.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

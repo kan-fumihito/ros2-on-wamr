@@ -1,0 +1,186 @@
+[35m[1mScanning dependencies of target talker_wasm[0m
+[ 50%] Built target talker_node
+[ 75%] [32mBuilding CXX object CMakeFiles/talker_wasm.dir/src/wasm_node.cpp.o[0m
+In file included from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Ku32 create_node_wasm(wasm_exec_env_t, char*)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:28:43:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::map<unsigned int, rclcpp::Node>::insert(std::pair<unsigned int, std::shared_ptr<rclcpp::Node> >)[m[K’
+   ros_data.nodes.insert(make_pair(id,node)[01;31m[K)[m[K;
+                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/map:61[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:5[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/usr/include/c++/8/bits/stl_map.h:801:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> std::map<_Key, _Tp, _Compare, _Alloc>::insert(const value_type&) [with _Key = unsigned int; _Tp = rclcpp::Node; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Node> >; typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator = std::_Rb_tree_iterator<std::pair<const unsigned int, rclcpp::Node> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const unsigned int, rclcpp::Node>][m[K’
+       [01;36m[Kinsert[m[K(const value_type& __x)
+       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/stl_map.h:801:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::pair<unsigned int, std::shared_ptr<rclcpp::Node> >[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst std::pair<const unsigned int, rclcpp::Node>&[m[K’}
+[01m[K/usr/include/c++/8/bits/stl_map.h:808:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::value_type&&) [with _Key = unsigned int; _Tp = rclcpp::Node; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Node> >; typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator = std::_Rb_tree_iterator<std::pair<const unsigned int, rclcpp::Node> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const unsigned int, rclcpp::Node>][m[K’
+       [01;36m[Kinsert[m[K(value_type&& __x)
+       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/stl_map.h:808:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::pair<unsigned int, std::shared_ptr<rclcpp::Node> >[m[K’ to ‘[01m[Kstd::map<unsigned int, rclcpp::Node>::value_type&&[m[K’ {aka ‘[01m[Kstd::pair<const unsigned int, rclcpp::Node>&&[m[K’}
+[01m[K/usr/include/c++/8/bits/stl_map.h:814:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Pair> std::__enable_if_t<std::is_constructible<std::pair<const _Key, _Tp>, _Pair>::value, std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> > std::map<_Key, _Tp, _Compare, _Alloc>::insert(_Pair&&) [with _Pair = _Pair; _Key = unsigned int; _Tp = rclcpp::Node; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Node> >][m[K’
+  [01;36m[Kinsert[m[K(_Pair&& __x)
+  [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/stl_map.h:814:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/8/bits/stl_map.h:828:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::initializer_list<std::pair<const _Key, _Tp> >) [with _Key = unsigned int; _Tp = rclcpp::Node; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Node> >][m[K’
+       [01;36m[Kinsert[m[K(std::initializer_list<value_type> __list)
+       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/stl_map.h:828:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::pair<unsigned int, std::shared_ptr<rclcpp::Node> >[m[K’ to ‘[01m[Kstd::initializer_list<std::pair<const unsigned int, rclcpp::Node> >[m[K’
+[01m[K/usr/include/c++/8/bits/stl_map.h:858:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator, const value_type&) [with _Key = unsigned int; _Tp = rclcpp::Node; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Node> >; std::map<_Key, _Tp, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const unsigned int, rclcpp::Node> >; std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const unsigned int, rclcpp::Node> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const unsigned int, rclcpp::Node>][m[K’
+       [01;36m[Kinsert[m[K(const_iterator __position, const value_type& __x)
+       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/stl_map.h:858:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/usr/include/c++/8/bits/stl_map.h:868:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator, std::map<_Key, _Tp, _Compare, _Alloc>::value_type&&) [with _Key = unsigned int; _Tp = rclcpp::Node; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Node> >; std::map<_Key, _Tp, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const unsigned int, rclcpp::Node> >; std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const unsigned int, rclcpp::Node> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const unsigned int, rclcpp::Node>][m[K’
+       [01;36m[Kinsert[m[K(const_iterator __position, value_type&& __x)
+       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/stl_map.h:868:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/usr/include/c++/8/bits/stl_map.h:873:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Pair> std::__enable_if_t<std::is_constructible<std::pair<const _Key, _Tp>, _Pair>::value, typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator> std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator, _Pair&&) [with _Pair = _Pair; _Key = unsigned int; _Tp = rclcpp::Node; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Node> >][m[K’
+  [01;36m[Kinsert[m[K(const_iterator __position, _Pair&& __x)
+  [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/stl_map.h:873:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:28:43:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+   ros_data.nodes.insert(make_pair(id,node)[01;36m[K)[m[K;
+                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/map:61[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:5[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/usr/include/c++/8/bits/stl_map.h:891:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _InputIterator> void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = _InputIterator; _Key = unsigned int; _Tp = rclcpp::Node; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Node> >][m[K’
+  [01;36m[Kinsert[m[K(_InputIterator __first, _InputIterator __last)
+  [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/stl_map.h:891:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:28:43:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+   ros_data.nodes.insert(make_pair(id,node)[01;36m[K)[m[K;
+                                           [01;36m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:21:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ u32 create_node_wasm([01;35m[Kwasm_exec_env_t exec_env[m[K, char *node_name)
+                      [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Ku32 create_publisher_wasm(wasm_exec_env_t, u32, char*)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:34:37:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&)[m[K’
+   auto node = ros_data.nodes[node_id[01;31m[K][m[K;
+                                     [01;31m[K^[m[K
+In file included from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/context.hpp:33[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/contexts/default_context.hpp:18[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/executor.hpp:31[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/executors/multi_threaded_executor.hpp:24[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/rclcpp.hpp:144[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:7[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/node.hpp:1179:23:[m[K [01;36m[Knote: [m[Kdeclared here
+   RCLCPP_DISABLE_COPY([01;36m[KNode[m[K)
+                       [01;36m[K^~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/macros.hpp:27:3:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KRCLCPP_DISABLE_COPY[m[K’
+   [01;36m[K__VA_ARGS__[m[K(const __VA_ARGS__ &) = delete; \
+   [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:35:24:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Krclcpp::Node[m[K’
+   auto publisher = node[01;31m[K->[m[Kcreate_publisher<std_msgs::msg::String>(topic_name, 10);
+                        [01;31m[K^~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:35:64:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   auto publisher = node->create_publisher<std_msgs::msg::String[01;31m[K>[m[K(topic_name, 10);
+                                                                [01;31m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:35:78:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   auto publisher = node->create_publisher<std_msgs::msg::String>(topic_name, [01;35m[K10[m[K);
+                                                                              [01;35m[K^~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:40:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_pair[m[K’ was not declared in this scope
+   ros_data.publishers.insert([01;31m[Kmake_pair[m[K(id,publisher));
+                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:40:30:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/c++/8/bits/stl_algobase.h:64[m[K,
+                 from [01m[K/usr/include/c++/8/memory:62[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:16[m[K:
+[01m[K/usr/include/c++/8/bits/stl_pair.h:524:5:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::make_pair[m[K’
+     [01;36m[Kmake_pair[m[K(_T1&& __x, _T2&& __y)
+     [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:32:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ u32 create_publisher_wasm([01;35m[Kwasm_exec_env_t exec_env[m[K, u32 node_id, char *topic_name)
+                           [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:[m[K In function ‘[01m[Kvoid publish_wasm(wasm_exec_env_t, u32, char*)[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:50:12:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Krclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >[m[K’
+   publisher[01;31m[K->[m[Kpublish(message);
+            [01;31m[K^~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:44:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexec_env[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void publish_wasm([01;35m[Kwasm_exec_env_t exec_env[m[K, u32 publisher_id, char* msg)
+                   [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:[m[K In function ‘[01m[Kvoid init_wamr()[m[K’:
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kinvalid conversion from ‘[01m[Ku32 (*)(wasm_exec_env_t, char*)[m[K’ {aka ‘[01m[Kunsigned int (*)(WASMExecEnv*, char*)[m[K’} to ‘[01m[Kvoid*[m[K’ [[01;35m[K-fpermissive[m[K]
+       [01;35m[K}[m[K;
+       [01;35m[K^[m[K
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kinvalid conversion from ‘[01m[Ku32 (*)(wasm_exec_env_t, u32, char*)[m[K’ {aka ‘[01m[Kunsigned int (*)(WASMExecEnv*, unsigned int, char*)[m[K’} to ‘[01m[Kvoid*[m[K’ [[01;35m[K-fpermissive[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kinvalid conversion from ‘[01m[Kvoid (*)(wasm_exec_env_t, u32, char*)[m[K’ {aka ‘[01m[Kvoid (*)(WASMExecEnv*, unsigned int, char*)[m[K’} to ‘[01m[Kvoid*[m[K’ [[01;35m[K-fpermissive[m[K]
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:53:7:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KNativeSymbol::attachment[m[K’ [[01;35m[K-Wmissing-field-initializers[m[K]
+In file included from [01m[K/usr/include/c++/8/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/8/memory:80[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:16[m[K:
+/usr/include/c++/8/tuple: In instantiation of ‘[01m[Kstd::pair<_T1, _T2>::pair(std::tuple<_Args1 ...>&, std::tuple<_Args2 ...>&, std::_Index_tuple<_Indexes1 ...>, std::_Index_tuple<_Indexes2 ...>) [with _Args1 = {const unsigned int&}; long unsigned int ..._Indexes1 = {0}; _Args2 = {}; long unsigned int ..._Indexes2 = {}; _T1 = const unsigned int; _T2 = rclcpp::Node][m[K’:
+[01m[K/usr/include/c++/8/tuple:1657:63:[m[K   required from ‘[01m[Kstd::pair<_T1, _T2>::pair(std::piecewise_construct_t, std::tuple<_Args1 ...>, std::tuple<_Args2 ...>) [with _Args1 = {const unsigned int&}; _Args2 = {}; _T1 = const unsigned int; _T2 = rclcpp::Node][m[K’
+[01m[K/usr/include/c++/8/ext/new_allocator.h:136:4:[m[K   required from ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = std::pair<const unsigned int, rclcpp::Node>; _Args = {const std::piecewise_construct_t&, std::tuple<const unsigned int&>, std::tuple<>}; _Tp = std::_Rb_tree_node<std::pair<const unsigned int, rclcpp::Node> >][m[K’
+[01m[K/usr/include/c++/8/bits/alloc_traits.h:475:4:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = std::pair<const unsigned int, rclcpp::Node>; _Args = {const std::piecewise_construct_t&, std::tuple<const unsigned int&>, std::tuple<>}; _Tp = std::_Rb_tree_node<std::pair<const unsigned int, rclcpp::Node> >; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<std::_Rb_tree_node<std::pair<const unsigned int, rclcpp::Node> > >][m[K’
+[01m[K/usr/include/c++/8/bits/stl_tree.h:626:32:[m[K   required from ‘[01m[Kvoid std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_construct_node(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Link_type, _Args&& ...) [with _Args = {const std::piecewise_construct_t&, std::tuple<const unsigned int&>, std::tuple<>}; _Key = unsigned int; _Val = std::pair<const unsigned int, rclcpp::Node>; _KeyOfValue = std::_Select1st<std::pair<const unsigned int, rclcpp::Node> >; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Node> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Link_type = std::_Rb_tree_node<std::pair<const unsigned int, rclcpp::Node> >*][m[K’
+[01m[K/usr/include/c++/8/bits/stl_tree.h:643:4:[m[K   required from ‘[01m[Kstd::_Rb_tree_node<_Val>* std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_create_node(_Args&& ...) [with _Args = {const std::piecewise_construct_t&, std::tuple<const unsigned int&>, std::tuple<>}; _Key = unsigned int; _Val = std::pair<const unsigned int, rclcpp::Node>; _KeyOfValue = std::_Select1st<std::pair<const unsigned int, rclcpp::Node> >; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Node> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Link_type = std::_Rb_tree_node<std::pair<const unsigned int, rclcpp::Node> >*][m[K’
+[01m[K/usr/include/c++/8/bits/stl_tree.h:2421:13:[m[K   required from ‘[01m[Kstd::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_emplace_hint_unique(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator, _Args&& ...) [with _Args = {const std::piecewise_construct_t&, std::tuple<const unsigned int&>, std::tuple<>}; _Key = unsigned int; _Val = std::pair<const unsigned int, rclcpp::Node>; _KeyOfValue = std::_Select1st<std::pair<const unsigned int, rclcpp::Node> >; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Node> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const unsigned int, rclcpp::Node> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const unsigned int, rclcpp::Node> >][m[K’
+[01m[K/usr/include/c++/8/bits/stl_map.h:499:8:[m[K   required from ‘[01m[Kstd::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = unsigned int; _Tp = rclcpp::Node; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Node> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = rclcpp::Node; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = unsigned int][m[K’
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:34:37:[m[K   required from here
+[01m[K/usr/include/c++/8/tuple:1668:70:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+         second(std::forward<_Args2>(std::get<_Indexes2>(__tuple2))...[01;31m[K)[m[K
+                                                                      [01;31m[K^[m[K
+In file included from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/rclcpp.hpp:144[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:7[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/node.hpp:1174:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+   [01;36m[KNode[m[K(
+   [01;36m[K^~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/node.hpp:1174:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/node.hpp:94:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+   explicit [01;36m[KNode[m[K(
+            [01;36m[K^~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/node.hpp:94:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/node.hpp:83:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+   explicit [01;36m[KNode[m[K(
+            [01;36m[K^~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/node.hpp:83:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+In file included from [01m[K/usr/include/c++/8/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/8/memory:80[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:16[m[K:
+/usr/include/c++/8/tuple: In instantiation of ‘[01m[Kstd::pair<_T1, _T2>::pair(std::tuple<_Args1 ...>&, std::tuple<_Args2 ...>&, std::_Index_tuple<_Indexes1 ...>, std::_Index_tuple<_Indexes2 ...>) [with _Args1 = {const unsigned int&}; long unsigned int ..._Indexes1 = {0}; _Args2 = {}; long unsigned int ..._Indexes2 = {}; _T1 = const unsigned int; _T2 = rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >][m[K’:
+[01m[K/usr/include/c++/8/tuple:1657:63:[m[K   required from ‘[01m[Kstd::pair<_T1, _T2>::pair(std::piecewise_construct_t, std::tuple<_Args1 ...>, std::tuple<_Args2 ...>) [with _Args1 = {const unsigned int&}; _Args2 = {}; _T1 = const unsigned int; _T2 = rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >][m[K’
+[01m[K/usr/include/c++/8/ext/new_allocator.h:136:4:[m[K   required from ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > >; _Args = {const std::piecewise_construct_t&, std::tuple<const unsigned int&>, std::tuple<>}; _Tp = std::_Rb_tree_node<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > >][m[K’
+[01m[K/usr/include/c++/8/bits/alloc_traits.h:475:4:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > >; _Args = {const std::piecewise_construct_t&, std::tuple<const unsigned int&>, std::tuple<>}; _Tp = std::_Rb_tree_node<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > >; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<std::_Rb_tree_node<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > > >][m[K’
+[01m[K/usr/include/c++/8/bits/stl_tree.h:626:32:[m[K   required from ‘[01m[Kvoid std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_construct_node(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Link_type, _Args&& ...) [with _Args = {const std::piecewise_construct_t&, std::tuple<const unsigned int&>, std::tuple<>}; _Key = unsigned int; _Val = std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > >; _KeyOfValue = std::_Select1st<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > >; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Link_type = std::_Rb_tree_node<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > >*][m[K’
+[01m[K/usr/include/c++/8/bits/stl_tree.h:643:4:[m[K   required from ‘[01m[Kstd::_Rb_tree_node<_Val>* std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_create_node(_Args&& ...) [with _Args = {const std::piecewise_construct_t&, std::tuple<const unsigned int&>, std::tuple<>}; _Key = unsigned int; _Val = std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > >; _KeyOfValue = std::_Select1st<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > >; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Link_type = std::_Rb_tree_node<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > >*][m[K’
+[01m[K/usr/include/c++/8/bits/stl_tree.h:2421:13:[m[K   required from ‘[01m[Kstd::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_emplace_hint_unique(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator, _Args&& ...) [with _Args = {const std::piecewise_construct_t&, std::tuple<const unsigned int&>, std::tuple<>}; _Key = unsigned int; _Val = std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > >; _KeyOfValue = std::_Select1st<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > >; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > >][m[K’
+[01m[K/usr/include/c++/8/bits/stl_map.h:499:8:[m[K   required from ‘[01m[Kstd::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = unsigned int; _Tp = rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >; _Compare = std::less<unsigned int>; _Alloc = std::allocator<std::pair<const unsigned int, rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > > > >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = unsigned int][m[K’
+[01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:47:52:[m[K   required from here
+[01m[K/usr/include/c++/8/tuple:1668:70:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >::Publisher()[m[K’
+         second(std::forward<_Args2>(std::get<_Indexes2>(__tuple2))...[01;31m[K)[m[K
+                                                                      [01;31m[K^[m[K
+In file included from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/executor.hpp:32[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/executors/multi_threaded_executor.hpp:24[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/rclcpp.hpp:144[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/function.hpp:7[m[K,
+                 from [01m[K/home/oss/b1018262/ROS/ros2-on-wasmer/dev_ws/src/pubsub_wasm/src/wasm_node.cpp:20[m[K:
+[01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/publisher.hpp:57:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Publisher<MessageT, Alloc>::Publisher(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rcl_publisher_options_t&, const rclcpp::PublisherEventCallbacks&, const std::shared_ptr<typename std::allocator_traits<_Alloc>::rebind_traits<T>::allocator_type>&) [with MessageT = std_msgs::msg::String_<std::allocator<void> >; Alloc = std::allocator<void>; std::__cxx11::string = std::__cxx11::basic_string<char>; rcl_publisher_options_t = rcl_publisher_options_t; typename std::allocator_traits<_Alloc>::rebind_traits<T>::allocator_type = std::allocator<std_msgs::msg::String_<std::allocator<void> > >][m[K’
+   [01;36m[KPublisher[m[K(
+   [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/publisher.hpp:57:3:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 0 provided
+[01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/publisher.hpp:46:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >::Publisher(const rclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >&)[m[K’
+ class [01;36m[KPublisher[m[K : public PublisherBase
+       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/oss/b1018262/ROS/ros2_dashing/ros2-linux/include/rclcpp/publisher.hpp:46:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+CMakeFiles/talker_wasm.dir/build.make:62: recipe for target 'CMakeFiles/talker_wasm.dir/src/wasm_node.cpp.o' failed
+make[2]: *** [CMakeFiles/talker_wasm.dir/src/wasm_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/talker_wasm.dir/all] Error 2
+CMakeFiles/Makefile2:136: recipe for target 'CMakeFiles/talker_wasm.dir/all' failed
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed
