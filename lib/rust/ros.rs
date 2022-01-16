@@ -20,6 +20,7 @@ pub extern fn ros_main(){
             publish_wasm(publisher_id, msg.as_ptr() as *const u8, msg.chars().count() as u32);
             spin_wasm(node_id);
             wait_1000ms();
+        
         }
     }
 }

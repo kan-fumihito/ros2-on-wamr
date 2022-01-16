@@ -71,6 +71,23 @@ void init_wamr(void)
   }
 }
 
+#include <wasm.h>
+#include <ros.hpp>
+
+int main(argc, *argv[]){
+  char *wasm_bin = read_file(argv[1]);
+
+  rclcpp::init();
+
+  auto env = init_wasm();
+
+  wasm_runtime(wasm_bin, env);
+
+  rclcpp::shutdown();
+
+  return 0;
+}
+
 int main(int argc, char *argv[])
 {
   FILE *fp;
@@ -95,7 +112,7 @@ int main(int argc, char *argv[])
   module_inst = wasm_runtime_instantiate(module, stack_size, heap_size, error_buf, sizeof(error_buf));
   func = wasm_runtime_lookup_function(module_inst, "ros_main", NULL);
   exec_env = wasm_runtime_create_exec_env(module_inst, stack_size);
-
+  a = wasm_runtime_call(instance, "ros_main");
   uint32_t args[2] = {};
 
   if(func==NULL){
